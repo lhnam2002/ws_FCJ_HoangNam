@@ -1,55 +1,51 @@
-# Đường dẫn baseURL cho GitHub Pages
-baseURL = "https://lhnam2002.github.io/ws_FCJ_HoangNam/"
-languageCode = "vi"
-title = "Serverless Data Processing Pipeline với Step Functions và EventBridge"
 
-# Theme
+baseURL = "https://lhnam2002.github.io/ws_FCJ_HoangNam/"
+languageCode = "en-us"
+
+title = "Serverless Data Processing Pipeline with Step Functions and EventBridge"
 theme = "hugo-theme-learn"
-defaultContentLanguage = "vi"
+defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 
-# Search functionality (outputs JSON for Lunr.js)
+
 [outputs]
-home = [ "HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON"]
 
 [params]
-  # Change color scheme. Variants: "red", "blue", "green", "workshop"
+
   themeVariant = "workshop"
 
-  # Github repo for edit button (leave empty if unused)
-  editURL = ""
 
-  # Metadata
-  description = "AWS workshop skeleton using Hugo Learn Theme"
+  editURL = ""
+  description = "AWS workshop on building a serverless data pipeline using Step Functions and EventBridge"
   author = "journeyoftheaverageguy@gmail.com"
 
-  # UI options
+
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
 
-# Multilingual configuration
+
 [Languages]
 
 [Languages.en]
-title = "AWS System Manager"
-weight = 1
-languageName = "English"
+  title = "Serverless Data Processing Pipeline with Step Functions and EventBridge"
+  weight = 1
+  languageName = "English"
 
-[[Languages.en.menu.shortcuts]]
-name = "<i class='fab fa-facebook'></i> AWS Study Group"
-identifier = "AWS Study Group FB"
-url = "https://www.facebook.com/groups/awsstudygroupfcj/"
-weight = 20
+  [[Languages.en.menu.shortcuts]]
+    name = "<i class='fab fa-facebook'></i> AWS Study Group"
+    identifier = "AWS Study Group FB"
+    url = "https://www.facebook.com/groups/awsstudygroupfcj/"
+    weight = 20
 
 [Languages.vi]
-title = "Synthetic Data Workshop"
-weight = 2
-languageName = "Tiếng Việt"
+  title = "Pipeline Xử Lý Dữ Liệu Serverless với Step Functions và EventBridge"
+  weight = 2
+  languageName = "Tiếng Việt"
 
-[[Languages.vi.menu.shortcuts]]
-name = "<i class='fab fa-facebook'></i> AWS Study Group"
-identifier = "AWS Study Group FB"
-url = "https://www.facebook.com/groups/awsstudygroupfcj/"
-weight = 20
-
+  [[Languages.vi.menu.shortcuts]]
+    name = "<i class='fab fa-facebook'></i> AWS Study Group"
+    identifier = "AWS Study Group FB"
+    url = "https://www.facebook.com/groups/awsstudygroupfcj/"
+    weight = 20

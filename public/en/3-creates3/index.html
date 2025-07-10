@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi" class="js csstransforms3d">
+<html lang="en" class="js csstransforms3d">
   <head><script src="/ws_FCJ_HoangNam/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=ws_FCJ_HoangNam/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/ws_FCJ_HoangNam/images/favicon.png" type="image/png">
 
-    <title>Giới thiệu :: Pipeline Xử Lý Dữ Liệu Serverless với Step Functions và EventBridge</title>
+    <title>Create S3 Buckets :: Serverless Data Processing Pipeline with Step Functions and EventBridge</title>
 
     
-    <link href="/ws_FCJ_HoangNam/css/nucleus.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/fontawesome-all.min.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/hybrid.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/featherlight.min.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/perfect-scrollbar.min.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/auto-complete.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/atom-one-dark-reasonable.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/theme.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/hugo-theme.css?1752154156" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/nucleus.css?1752155304" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/fontawesome-all.min.css?1752155304" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/hybrid.css?1752155304" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/featherlight.min.css?1752155304" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/perfect-scrollbar.min.css?1752155304" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/auto-complete.css?1752155304" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/atom-one-dark-reasonable.css?1752155304" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/theme.css?1752155304" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/hugo-theme.css?1752155304" rel="stylesheet">
     
-    <link href="/ws_FCJ_HoangNam/css/theme-workshop.css?1752154156" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/theme-workshop.css?1752155304" rel="stylesheet">
     
     
 
-    <script src="/ws_FCJ_HoangNam/js/jquery-3.3.1.min.js?1752154156"></script>
+    <script src="/ws_FCJ_HoangNam/js/jquery-3.3.1.min.js?1752155304"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/ws_FCJ_HoangNam/vi/1-introduce/">
+  <body class="" data-url="/ws_FCJ_HoangNam/en/3-creates3/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/lunr.min.js?1752154156"></script>
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/auto-complete.js?1752154156"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/lunr.min.js?1752155304"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/auto-complete.js?1752155304"></script>
 <script type="text/javascript">
     
-        var baseurl = "http:\/\/localhost:1313\/ws_FCJ_HoangNam\/\/vi";
+        var baseurl = "http:\/\/localhost:1313\/ws_FCJ_HoangNam\/\/en";
     
 </script>
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/search.js?1752154156"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/search.js?1752155304"></script>
 
     
   </div>
@@ -82,13 +82,65 @@
  
   
     
-    <li data-nav-id="/ws_FCJ_HoangNam/vi/1-introduce/" title="Giới thiệu" class="dd-item 
+    <li data-nav-id="/ws_FCJ_HoangNam/en/1-introduce/" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ws_FCJ_HoangNam/en/1-introduce/">
+           <b> 1. </b> Introduction
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ws_FCJ_HoangNam/en/2-preparation/" title="Preparation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ws_FCJ_HoangNam/en/2-preparation/">
+           <b> 2. </b> Preparation
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ws_FCJ_HoangNam/en/3-creates3/" title="Create S3 Buckets" class="dd-item 
         
         active
         
         ">
-      <a href="/ws_FCJ_HoangNam/vi/1-introduce/">
-           <b> 1. </b> Giới thiệu
+      <a href="/ws_FCJ_HoangNam/en/3-creates3/">
+           <b> 3. </b> Create S3 Buckets
           
             <i class="fas fa-check read-icon"></i>
           
@@ -108,91 +160,13 @@
  
   
     
-    <li data-nav-id="/ws_FCJ_HoangNam/vi/2-preparation/" title="Chuẩn bị" class="dd-item 
+    <li data-nav-id="/ws_FCJ_HoangNam/en/6-cleanup/" title="Clean up resources" class="dd-item 
         
         
         
         ">
-      <a href="/ws_FCJ_HoangNam/vi/2-preparation/">
-           <b> 2. </b> Chuẩn bị
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ws_FCJ_HoangNam/vi/3-creates3/" title="Tạo S3 Buckets" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ws_FCJ_HoangNam/vi/3-creates3/">
-           <b> 3. </b> Tạo S3 Buckets
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ws_FCJ_HoangNam/vi/4-create-iam-roles/" title="Tạo IAM Roles" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ws_FCJ_HoangNam/vi/4-create-iam-roles/">
-           <b> 4. </b> Tạo IAM Roles
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ws_FCJ_HoangNam/vi/6-cleanup/" title="Dọn dẹp tài nguyên  " class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ws_FCJ_HoangNam/vi/6-cleanup/">
-          <b>6. </b>Dọn dẹp tài nguyên  
+      <a href="/ws_FCJ_HoangNam/en/6-cleanup/">
+          <b>6. </b>Clean up resources
           
             <i class="fas fa-check read-icon"></i>
           
@@ -239,7 +213,7 @@
                   
                     
                     
-                      <option id="en" value="http://localhost:1313/ws_FCJ_HoangNam/en/1-introduce/">English</option>
+                      <option id="en" value="http://localhost:1313/ws_FCJ_HoangNam/en/3-creates3/" selected>English</option>
                     
                   
               
@@ -253,7 +227,7 @@
                   
                     
                     
-                      <option id="vi" value="http://localhost:1313/ws_FCJ_HoangNam/vi/1-introduce/" selected>Tiếng Việt</option>
+                      <option id="vi" value="http://localhost:1313/ws_FCJ_HoangNam/vi/3-creates3/">Tiếng Việt</option>
                     
                   
               
@@ -341,7 +315,7 @@
             
           
           
-            <a href='/ws_FCJ_HoangNam/vi/'>Serverless Data Processing Pipeline</a> > Giới thiệu
+            <a href='/ws_FCJ_HoangNam/en/'>Serverless Data Processing Pipeline</a> > Create S3 Buckets
           
         
           
@@ -354,8 +328,12 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#bối-cảnh-và-động-lực">Bối cảnh và Động lực</a></li>
-    <li><a href="#ưu-điểm-của-giải-pháp-serverless-với-step-functions-và-eventbridge">Ưu điểm của Giải pháp Serverless với Step Functions và EventBridge</a></li>
+    <li><a href="#-step-1-create-s3-buckets">☁️ Step 1: Create S3 Buckets</a></li>
+    <li><a href="#1-access-the-s3-console">1. Access the S3 Console</a></li>
+    <li><a href="#2-create-input-bucket">2. Create Input Bucket</a></li>
+    <li><a href="#3-create-output-bucket">3. Create Output Bucket</a></li>
+    <li><a href="#4-verify-the-buckets">4. Verify the Buckets</a></li>
+    <li><a href="#optional-upload-testcsv-to-input-bucket">Optional: Upload <code>test.csv</code> to Input Bucket</a></li>
   </ul>
 </nav>
     </div>
@@ -373,7 +351,7 @@
           
             <h1>
               
-              Giới thiệu
+              Create S3 Buckets
             </h1>
           
 
@@ -381,52 +359,87 @@
 
 
 
-	<h2 id="bối-cảnh-và-động-lực">Bối cảnh và Động lực</h2>
-<p>Trong thời đại dữ liệu bùng nổ, việc xử lý và phân tích dữ liệu một cách <strong>hiệu quả</strong>, <strong>tự động</strong>, và có <strong>khả năng mở rộng linh hoạt</strong> là yếu tố then chốt giúp các tổ chức hiện đại đưa ra quyết định kịp thời và tối ưu quy trình kinh doanh.</p>
-<p>Đề tài <strong>“Xây dựng Serverless Data Processing Pipeline với AWS Step Functions và Amazon EventBridge”</strong> trình bày một giải pháp <strong>xử lý dữ liệu không máy chủ (serverless)</strong>, tận dụng sức mạnh của các dịch vụ <strong>Amazon Web Services (AWS)</strong> nhằm đáp ứng các yêu cầu về hiệu suất, độ linh hoạt và tối ưu chi phí.</p>
-<p>Pipeline được thiết kế để <strong>tự động xử lý các tệp CSV</strong> được tải lên <strong>Amazon S3</strong>, sử dụng <strong>Amazon EventBridge</strong> để kích hoạt quy trình khi phát hiện tệp mới, và <strong>AWS Step Functions</strong> để điều phối từng bước xử lý — bao gồm kiểm tra định dạng, xử lý song song, tổng hợp kết quả và lưu trữ.<br>
-Các tác vụ xử lý được thực hiện bởi các hàm <strong>AWS Lambda</strong>. Metadata được lưu vào <strong>Amazon DynamoDB</strong>, thông báo trạng thái được gửi qua <strong>Amazon SNS</strong>, và toàn bộ hệ thống được <strong>giám sát bởi Amazon CloudWatch</strong> để đảm bảo hiệu suất và phát hiện lỗi kịp thời.</p>
+	<h2 id="-step-1-create-s3-buckets">☁️ Step 1: Create S3 Buckets</h2>
+<p>Amazon S3 is used to store <strong>input</strong> and <strong>output</strong> data for the serverless data processing pipeline.</p>
 <hr>
-<h2 id="ưu-điểm-của-giải-pháp-serverless-với-step-functions-và-eventbridge">Ưu điểm của Giải pháp Serverless với Step Functions và EventBridge</h2>
-<p>Hệ thống sử dụng các dịch vụ chủ lực như <strong>Amazon S3</strong>, <strong>EventBridge</strong>, <strong>Step Functions</strong>, <strong>Lambda</strong>, <strong>DynamoDB</strong>, <strong>CloudWatch</strong>, và <strong>SNS</strong>, đem lại nhiều lợi ích nổi bật:</p>
+<h2 id="1-access-the-s3-console">1. Access the S3 Console</h2>
+<ul>
+<li>Go to AWS Console: <a href="https://console.aws.amazon.com/s3">https://console.aws.amazon.com/s3</a></li>
+<li>In the search bar, type <strong>S3</strong> and select <strong>Amazon S3</strong></li>
+</ul>
+<p><img src="/images/3.createS3/B1_1.png" alt="Connect"></p>
+<hr>
+<h2 id="2-create-input-bucket">2. Create Input Bucket</h2>
 <ul>
 <li>
-<p><strong>Tự động hóa hoàn toàn</strong>:<br>
-Quy trình được kích hoạt và điều phối tự động dựa trên sự kiện.</p>
+<p>Click <strong>Create bucket</strong></p>
 </li>
 <li>
-<p><strong>Khả năng mở rộng linh hoạt</strong>:<br>
-Tự động điều chỉnh theo khối lượng công việc, hỗ trợ xử lý song song.</p>
+<p>Configure the following:</p>
+<ul>
+<li>
+<p><strong>Bucket name</strong>: <code>data-processing-input-123456789012</code><br>
+<em>(replace <code>123456789012</code> with your actual AWS Account ID)</em></p>
 </li>
 <li>
-<p><strong>Tối ưu chi phí vận hành</strong>:<br>
-Mô hình trả phí theo mức sử dụng, không cần duy trì hạ tầng vật lý.</p>
+<p><strong>Region</strong>: Select <code>Asia Pacific (Singapore)</code> - <code>ap-southeast-1</code></p>
 </li>
 <li>
-<p><strong>Xử lý lỗi thông minh</strong>:<br>
-Logic retry tự động, thông báo lỗi qua SNS và theo dõi lỗi qua CloudWatch.</p>
-</li>
-<li>
-<p><strong>Linh hoạt &amp; dễ bảo trì</strong>:<br>
-Workflow dễ dàng cập nhật, tách biệt các chức năng bằng Lambda.</p>
-</li>
-<li>
-<p><strong>Giám sát hiệu quả</strong>:<br>
-CloudWatch cung cấp log và cảnh báo theo thời gian thực.</p>
-</li>
-<li>
-<p><strong>Xác thực dữ liệu đầu vào</strong>:<br>
-Đảm bảo dữ liệu hợp lệ trước khi xử lý.</p>
-</li>
-<li>
-<p><strong>Vận hành đơn giản</strong>:<br>
-Dễ dàng quản lý vòng đời tài nguyên: tạo, cập nhật, xóa.</p>
-</li>
-<li>
-<p><strong>Phù hợp thực tiễn</strong>:<br>
-Áp dụng tốt cho nhiều tình huống như ETL, phân tích dữ liệu theo lô, hệ thống phân tích sự kiện thời gian thực.</p>
+<p><strong>Object Ownership</strong>: Choose <code>ACLs disabled</code></p>
 </li>
 </ul>
+<p><img src="/images/3.createS3/B1_2_1.png" alt="Connect"></p>
+<ul>
+<li>
+<p><strong>Block Public Access</strong>: Leave default <em>(block all public access)</em></p>
+</li>
+<li>
+<p><strong>Encryption</strong>: Enable<br>
+<strong>Server-side encryption with Amazon S3-managed keys (SSE-S3)</strong></p>
+</li>
+</ul>
+<p><img src="/images/3.createS3/B1_2_2.png" alt="Connect"></p>
+</li>
+<li>
+<p>Click <strong>Create bucket</strong></p>
+<p><img src="/images/3.createS3/B1_2_3.png" alt="Connect"></p>
+</li>
+</ul>
+<p>⚠️ <em>If you receive the error &ldquo;Bucket name already exists&rdquo;, add a suffix to make it unique, e.g.:</em><br>
+<code>data-processing-input-123456789012-v1</code></p>
+<hr>
+<h2 id="3-create-output-bucket">3. Create Output Bucket</h2>
+<ul>
+<li>Repeat the same steps as above</li>
+<li>Use the name: <code>data-processing-output-123456789012</code></li>
+</ul>
+<hr>
+<h2 id="4-verify-the-buckets">4. Verify the Buckets</h2>
+<ul>
+<li>
+<p>Go to the <strong>Buckets</strong> list in the S3 console</p>
+</li>
+<li>
+<p>Confirm both buckets are created:</p>
+<ul>
+<li><code>data-processing-input-123456789012</code></li>
+<li><code>data-processing-output-123456789012</code></li>
+</ul>
+<p><img src="/images/3.createS3/B1_3.png" alt="Connect"></p>
+</li>
+</ul>
+<hr>
+<h2 id="optional-upload-testcsv-to-input-bucket">Optional: Upload <code>test.csv</code> to Input Bucket</h2>
+<ul>
+<li>Open the <code>data-processing-input-123456789012</code> bucket
+<img src="/images/3.createS3/B1_4.png" alt="Connect"></li>
+<li>Click <strong>Upload</strong></li>
+<li>Select the previously created <code>test.csv</code> file
+<img src="/images/3.createS3/B1_4_2.png" alt="Connect"></li>
+<li>Click <strong>Upload</strong> to confirm
+<img src="/images/3.createS3/B1_4_3.png" alt="Connect"></li>
+</ul>
+<hr>
 
 
 
@@ -467,23 +480,6 @@ Dễ dàng quản lý vòng đời tài nguyên: tạo, cập nhật, xóa.</p>
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -519,6 +515,7 @@ Dễ dàng quản lý vòng đời tài nguyên: tạo, cập nhật, xóa.</p>
             
                 
                     
+                    
                 
                 
 
@@ -534,6 +531,9 @@ Dễ dàng quản lý vòng đời tài nguyên: tạo, cập nhật, xóa.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -555,10 +555,10 @@ Dễ dàng quản lý vòng đời tài nguyên: tạo, cập nhật, xóa.</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/ws_FCJ_HoangNam/vi/" title="Serverless Data Processing Pipeline"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/ws_FCJ_HoangNam/en/2-preparation/" title="Preparation"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/ws_FCJ_HoangNam/vi/2-preparation/" title="Chuẩn bị" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/ws_FCJ_HoangNam/en/6-cleanup/" title="Clean up resources" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -568,19 +568,19 @@ Dễ dàng quản lý vòng đời tài nguyên: tạo, cập nhật, xóa.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/ws_FCJ_HoangNam/js/clipboard.min.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.min.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.jquery.min.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/jquery.sticky.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/featherlight.min.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/highlight.pack.js?1752154156"></script>
+    <script src="/ws_FCJ_HoangNam/js/clipboard.min.js?1752155304"></script>
+    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.min.js?1752155304"></script>
+    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.jquery.min.js?1752155304"></script>
+    <script src="/ws_FCJ_HoangNam/js/jquery.sticky.js?1752155304"></script>
+    <script src="/ws_FCJ_HoangNam/js/featherlight.min.js?1752155304"></script>
+    <script src="/ws_FCJ_HoangNam/js/highlight.pack.js?1752155304"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/ws_FCJ_HoangNam/js/modernizr.custom-3.6.0.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/learn.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/hugo-learn.js?1752154156"></script>
+    <script src="/ws_FCJ_HoangNam/js/modernizr.custom-3.6.0.js?1752155304"></script>
+    <script src="/ws_FCJ_HoangNam/js/learn.js?1752155304"></script>
+    <script src="/ws_FCJ_HoangNam/js/hugo-learn.js?1752155304"></script>
 
-    <link href="/ws_FCJ_HoangNam/mermaid/mermaid.css?1752154156" rel="stylesheet" />
-    <script src="/ws_FCJ_HoangNam/mermaid/mermaid.js?1752154156"></script>
+    <link href="/ws_FCJ_HoangNam/mermaid/mermaid.css?1752155304" rel="stylesheet" />
+    <script src="/ws_FCJ_HoangNam/mermaid/mermaid.js?1752155304"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

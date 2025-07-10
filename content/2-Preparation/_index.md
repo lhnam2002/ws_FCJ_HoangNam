@@ -19,12 +19,14 @@ pre : " <b> 2. </b> "
 - Attach permissions:
   - Choose the existing policy: `AdministratorAccess`
 - Click **Create group**
+
 ![Connect](/images/2.preparation/bs2.png)
 ---
 
 ### Step 2: Create an IAM User
 
 - Go to **Users** → click **Add users**
+
 ![Connect](/images/2.preparation/bs3.png)
 - Enter user name: `dev-user`
 - Choose Access Types:

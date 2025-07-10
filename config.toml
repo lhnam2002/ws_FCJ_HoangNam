@@ -4,7 +4,7 @@ languageCode = "vi"
 title = "Serverless Data Processing Pipeline với Step Functions và EventBridge"
 
 # Theme
-theme = "learn"
+theme = "hugo-theme-learn"
 defaultContentLanguage = "vi"
 defaultContentLanguageInSubdir = true
 

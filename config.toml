@@ -1,22 +1,36 @@
-# Change the default theme to be use when building the site with Hugo
-theme = "hugo-theme-learn"
+# Đường dẫn baseURL cho GitHub Pages
+baseURL = "https://lhnam2002.github.io/ws_FCJ_HoangNam/"
+languageCode = "vi"
+title = "Serverless Data Processing Pipeline với Step Functions và EventBridge"
 
-# For search functionality
+# Theme
+theme = "learn"
+defaultContentLanguage = "vi"
+defaultContentLanguageInSubdir = true
+
+# Search functionality (outputs JSON for Lunr.js)
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
 [params]
-  # Change default color scheme with a variant one. Can be "red", "blue", "green".
+  # Change color scheme. Variants: "red", "blue", "green", "workshop"
   themeVariant = "workshop"
-  # Git hub repo link
+
+  # Github repo for edit button (leave empty if unused)
   editURL = ""
-  description = ""
+
+  # Metadata
+  description = "AWS workshop skeleton using Hugo Learn Theme"
   author = "journeyoftheaverageguy@gmail.com"
+
+  # UI options
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
-  
+
+# Multilingual configuration
 [Languages]
+
 [Languages.en]
 title = "AWS System Manager"
 weight = 1
@@ -29,7 +43,7 @@ url = "https://www.facebook.com/groups/awsstudygroupfcj/"
 weight = 20
 
 [Languages.vi]
-title = "AWS System Manager"
+title = "Synthetic Data Workshop"
 weight = 2
 languageName = "Tiếng Việt"
 

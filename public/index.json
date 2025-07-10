@@ -1,0 +1,50 @@
+[
+{
+	"uri": "//localhost:1313/1-introduce/",
+	"title": "Introduction",
+	"tags": [],
+	"description": "",
+	"content": "Context and Motivation In today’s data-driven world, the ability to process and analyze data in an efficient, automated, and scalable manner is essential to supporting modern business processes and decision-making.\nThe project “Building a Serverless Data Processing Pipeline with AWS Step Functions and Amazon EventBridge” introduces a serverless data processing solution, leveraging the robust capabilities of Amazon Web Services (AWS) to meet the needs for high performance, flexibility, and cost-efficiency.\nThe pipeline is designed to automatically process CSV files uploaded to Amazon S3. Amazon EventBridge detects the file upload event and triggers a workflow orchestrated by AWS Step Functions, which includes validation, parallel data processing, result aggregation, and final storage.\nProcessing tasks are executed via AWS Lambda functions. Metadata is stored in Amazon DynamoDB, status notifications are sent through Amazon SNS, and the entire system is monitored via Amazon CloudWatch for performance tracking and error detection.\nKey Benefits of Serverless Data Processing with Step Functions and EventBridge By utilizing core AWS services such as Amazon S3, EventBridge, Step Functions, Lambda, DynamoDB, CloudWatch, and SNS, this solution offers several key advantages:\nFully automated workflows:\nEvent-driven triggers initiate and orchestrate the entire pipeline seamlessly.\nElastic scalability:\nAutomatically scales with incoming workload, supporting parallel data processing.\nCost efficiency:\nPay-as-you-go pricing eliminates infrastructure overhead.\nRobust error handling:\nAutomatic retries, error notifications via SNS, and observability through CloudWatch.\nFlexibility and maintainability:\nModular design using Lambda functions allows for easy updates and debugging.\nPowerful monitoring:\nCloudWatch provides detailed logs and real-time alerts.\nInput data validation:\nEnsures only valid and clean data is processed.\nSimplified operations:\nEasy management of resource lifecycle — create, update, and tear down.\nReal-world applicability:\nIdeal for ETL pipelines, batch processing, and real-time event-driven data analytics.\n"
+},
+{
+	"uri": "//localhost:1313/",
+	"title": "Serverless Data Processing Pipeline",
+	"tags": [],
+	"description": "",
+	"content": "Building a Serverless Data Processing Pipeline with AWS Step Functions and EventBridge 📌 Overview In today’s technological landscape, the demand for efficient, flexible, and cost-effective data processing is becoming increasingly critical. Organizations require scalable and easily manageable solutions that eliminate the burden of maintaining complex infrastructure.\nServerless technology on the cloud has emerged as an optimal approach, allowing the development of powerful data processing systems without the need to manage physical servers. This reduces operational costs, accelerates deployment, and enables high automation.\n🧩 Pipeline Overview This serverless pipeline processes data from CSV files uploaded to Amazon S3. Amazon EventBridge listens to events from S3, filters for .csv files, and triggers AWS Step Functions to orchestrate the processing workflow. AWS Lambda handles tasks such as validation, parallel processing, aggregation, and result storage. Amazon DynamoDB stores metadata, Amazon CloudWatch monitors performance and errors, and Amazon SNS sends email notifications about the pipeline status.\nThe entire solution is deployed in the Singapore region (ap-southeast-1).\nKey Components Amazon S3\nInput Bucket: Stores the input CSV files\ndata-processing-input-\u0026lt;your-account-id\u0026gt; Output Bucket: Stores processed JSON results\ndata-processing-output-\u0026lt;your-account-id\u0026gt; Amazon EventBridge\nFilters ObjectCreated events from S3 for .csv files and triggers Step Functions AWS Step Functions (State Machine: DataProcessingWorkflow)\nValidateData: Validates the uploaded CSV file ParallelProcess: Executes two parallel branches (ProcessData1, ProcessData2) AggregateData: Aggregates results from both parallel branches StoreResults: Stores the final results to S3 and metadata to DynamoDB NotifySuccess: Sends a success notification via SNS ErrorHandler: Sends an error notification via SNS AWS Lambda\nValidateDataFunction: Validates the CSV format ProcessDataFunction: Processes data (used in each parallel branch) AggregateDataFunction: Aggregates intermediate results StoreResultsFunction: Saves final results and metadata Amazon DynamoDB\nProcessingMetadata table stores information such as ExecutionId, Timestamp, and Status Amazon CloudWatch\nLogs events and sets alarms for failures or anomalies Amazon SNS\nPipelineNotifications topic sends email alerts about pipeline status IAM Roles\nLambdaDataProcessingRole: Grants Lambda permission to access S3, DynamoDB, and SNS StepFunctionsDataProcessingRole: Grants Step Functions permission to invoke Lambda and SNS 🔁 Data Flow A user uploads a CSV file (e.g., test.csv) to the S3 Input Bucket\nS3 triggers an ObjectCreated event, which is sent to EventBridge\nEventBridge Rule (S3TriggerRule) filters .csv files and triggers the Step Functions workflow (DataProcessingWorkflow)\nStep Functions orchestrates the following steps:\nValidateData: Calls ValidateDataFunction to validate the CSV file ParallelProcess: Executes two parallel branches, each invoking ProcessDataFunction AggregateData: Calls AggregateDataFunction to merge results StoreResults: Invokes StoreResultsFunction to save outputs to S3 and metadata to DynamoDB NotifySuccess: Sends a success notification via SNS ErrorHandler: Sends an error notification via SNS if any step fails CloudWatch logs execution and triggers alerts in case of errors\nSNS sends email notifications about the final pipeline status (success or failure)\nContent Introduction Preparation Connect to EC2 instance Manage session logs Port Forwarding Clean up resources "
+},
+{
+	"uri": "//localhost:1313/2-preparation/",
+	"title": "Preparation",
+	"tags": [],
+	"description": "",
+	"content": "Preparation Steps 1. Create IAM Components Step 1: Create an IAM User Group Go to AWS Console: https://console.aws.amazon.com/iam Select User groups → Create group Group name: devGr Attach permissions: Choose the existing policy: AdministratorAccess Click Create group Step 2: Create an IAM User Go to Users → click Add users Enter user name: dev-user Choose Access Types: Programmatic access (for AWS CLI usage) AWS Management Console access (for web console login) Set a password or let AWS auto-generate one Add the user to group: devGr Click Create user Step 3: Create an AWS Access Key In the user list, click on dev-user Navigate to the Security credentials tab Under Access keys, click Create access key Choose usage purpose: Command Line Interface (CLI) Once created, you will receive: Access key ID Secret access key ⚠️ Save it immediately, the Secret access key is shown only once 2. Install and Configure AWS CLI 🔹 Install AWS CLI on Windows Open the Run dialog (Windows + R), paste the following command: msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi Verify the CLI Version aws --version Configure AWS CLI aws configure Provide the following information when prompted:\n\u0026ndash; Access Key ID\n\u0026ndash; Secret Access Key\n\u0026ndash; Region (ap-southeast-1)\n\u0026ndash; Output format (json)\n"
+},
+{
+	"uri": "//localhost:1313/3-creates3/",
+	"title": "Create S3 Buckets",
+	"tags": [],
+	"description": "",
+	"content": "☁️ Step 1: Create S3 Buckets Amazon S3 is used to store input and output data for the serverless data processing pipeline.\n1. Access the S3 Console Go to AWS Console: https://console.aws.amazon.com/s3 In the search bar, type S3 and select Amazon S3 2. Create Input Bucket Click Create bucket\nConfigure the following:\nBucket name: data-processing-input-123456789012\n(replace 123456789012 with your actual AWS Account ID)\nRegion: Select Asia Pacific (Singapore) - ap-southeast-1\nObject Ownership: Choose ACLs disabled\nBlock Public Access: Leave default (block all public access)\nEncryption: Enable\nServer-side encryption with Amazon S3-managed keys (SSE-S3)\nClick Create bucket\n⚠️ If you receive the error \u0026ldquo;Bucket name already exists\u0026rdquo;, add a suffix to make it unique, e.g.:\ndata-processing-input-123456789012-v1\n3. Create Output Bucket Repeat the same steps as above Use the name: data-processing-output-123456789012 4. Verify the Buckets Go to the Buckets list in the S3 console\nConfirm both buckets are created:\ndata-processing-input-123456789012 data-processing-output-123456789012 Optional: Upload test.csv to Input Bucket Open the data-processing-input-123456789012 bucket Click Upload Select the previously created test.csv file Click Upload to confirm "
+},
+{
+	"uri": "//localhost:1313/6-cleanup/",
+	"title": "Clean up resources",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

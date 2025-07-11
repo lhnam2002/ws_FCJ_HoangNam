@@ -16,7 +16,7 @@ Amazon S3 được sử dụng để lưu trữ dữ liệu **đầu vào (input
 - Vào AWS Console: [https://console.aws.amazon.com/s3](https://console.aws.amazon.com/s3)
 - Gõ **S3** vào thanh tìm kiếm và chọn **Amazon S3**
 
-![Connect](/images/3.createS3/B1_1.png)
+![Connect](/ws_FCJ_HoangNam/images/3.createS3/B1_1.png)
 
 ---
 
@@ -32,18 +32,18 @@ Amazon S3 được sử dụng để lưu trữ dữ liệu **đầu vào (input
 
   - **Object Ownership**: Chọn `ACLs disabled`
 
-  ![Connect](/images/3.createS3/B1_2_1.png)
+  ![Connect](/ws_FCJ_HoangNam/images/3.createS3/B1_2_1.png)
 
   - **Block Public Access**: Giữ mặc định *(chặn tất cả truy cập công khai)*
 
   - **Encryption**: Bật `Enable` với tùy chọn  
     **Server-side encryption with Amazon S3-managed keys (SSE-S3)**
   
-  ![Connect](/images/3.createS3/B1_2_2.png)
+  ![Connect](/ws_FCJ_HoangNam/images/3.createS3/B1_2_2.png)
 
 - Nhấn **Create bucket**
 
-  ![Connect](/images/3.createS3/B1_2_3.png)
+  ![Connect](/ws_FCJ_HoangNam/images/3.createS3/B1_2_3.png)
 
 ⚠️ *Nếu gặp lỗi `"Bucket name already exists"`, hãy thêm hậu tố ngẫu nhiên, ví dụ:*  
 `data-processing-input-123456789012-v1`
@@ -64,18 +64,18 @@ Amazon S3 được sử dụng để lưu trữ dữ liệu **đầu vào (input
   - `data-processing-input-123456789012`
   - `data-processing-output-123456789012`
 
-![Connect](/images/3.createS3/B1_3.png)
+![Connect](/ws_FCJ_HoangNam/images/3.createS3/B1_3.png)
 ---
 
 ## Tùy Chọn: Tải file test.csv lên Input Bucket
 
 - Vào bucket `data-processing-input-123456789012`
-![Connect](/images/3.createS3/B1_4.png)
+![Connect](/ws_FCJ_HoangNam/images/3.createS3/B1_4.png)
 - Nhấn **Upload**
 - Chọn file `test.csv` đã tạo trước đó
-![Connect](/images/3.createS3/B1_4_2.png)
+![Connect](/ws_FCJ_HoangNam/images/3.createS3/B1_4_2.png)
 - Nhấn **Upload** để tải lên
-![Connect](/images/3.createS3/B1_4_3.png)
+![Connect](/ws_FCJ_HoangNam/images/3.createS3/B1_4_3.png)
 
 ---
 

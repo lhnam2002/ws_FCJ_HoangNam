@@ -75,7 +75,7 @@ Tất cả được triển khai tại **Region Singapore (ap-southeast-1)**.
 5. **CloudWatch** ghi log và kích hoạt cảnh báo nếu có lỗi
 6. **SNS** gửi email thông báo trạng thái pipeline (thành công hoặc lỗi)
 
-![ConnectPrivate](/images/SoDo.drawio.png) 
+![ConnectPrivate](/ws_FCJ_HoangNam/images/SoDo.drawio.png) 
 
 ### Nội dung
 

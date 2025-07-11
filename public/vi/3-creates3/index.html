@@ -12,21 +12,21 @@
     <title>Tạo S3 Buckets :: Pipeline Xử Lý Dữ Liệu Serverless với Step Functions và EventBridge</title>
 
     
-    <link href="/ws_FCJ_HoangNam/css/nucleus.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/fontawesome-all.min.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/hybrid.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/featherlight.min.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/perfect-scrollbar.min.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/auto-complete.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/atom-one-dark-reasonable.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/theme.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/hugo-theme.css?1752154156" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/nucleus.css?1752228928" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/fontawesome-all.min.css?1752228928" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/hybrid.css?1752228928" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/featherlight.min.css?1752228928" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/perfect-scrollbar.min.css?1752228928" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/auto-complete.css?1752228928" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/atom-one-dark-reasonable.css?1752228928" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/theme.css?1752228928" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/hugo-theme.css?1752228928" rel="stylesheet">
     
-    <link href="/ws_FCJ_HoangNam/css/theme-workshop.css?1752154156" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/theme-workshop.css?1752228928" rel="stylesheet">
     
     
 
-    <script src="/ws_FCJ_HoangNam/js/jquery-3.3.1.min.js?1752154156"></script>
+    <script src="/ws_FCJ_HoangNam/js/jquery-3.3.1.min.js?1752228928"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/lunr.min.js?1752154156"></script>
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/auto-complete.js?1752154156"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/lunr.min.js?1752228928"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/auto-complete.js?1752228928"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/ws_FCJ_HoangNam\/\/vi";
     
 </script>
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/search.js?1752154156"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/search.js?1752228928"></script>
 
     
   </div>
@@ -186,13 +186,91 @@
  
   
     
-    <li data-nav-id="/ws_FCJ_HoangNam/vi/6-cleanup/" title="Dọn dẹp tài nguyên  " class="dd-item 
+    <li data-nav-id="/ws_FCJ_HoangNam/vi/5-createlambda/" title="Tạo Lambda Funtion" class="dd-item 
         
         
         
         ">
-      <a href="/ws_FCJ_HoangNam/vi/6-cleanup/">
-          <b>6. </b>Dọn dẹp tài nguyên  
+      <a href="/ws_FCJ_HoangNam/vi/5-createlambda/">
+           <b> 5. </b> Tạo Lambda Funtion
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ws_FCJ_HoangNam/vi/6-createdynamodbtable/" title="Tạo DynamoDB Table" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ws_FCJ_HoangNam/vi/6-createdynamodbtable/">
+          <b>6. </b>Tạo DynamoDB Table
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ws_FCJ_HoangNam/vi/7-createsnstopic/" title="Tạo SNS Topic" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ws_FCJ_HoangNam/vi/7-createsnstopic/">
+           <b> 7. </b> Tạo SNS Topic
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ws_FCJ_HoangNam/vi/8-createstepfunctions/" title="Tạo Step Functions State Machine" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ws_FCJ_HoangNam/vi/8-createstepfunctions/">
+           <b> 8. </b> Tạo Step Functions State Machine
           
             <i class="fas fa-check read-icon"></i>
           
@@ -359,7 +437,7 @@
     <li><a href="#2-tạo-bucket-đầu-vào-input-bucket">2. Tạo Bucket Đầu Vào (Input Bucket)</a></li>
     <li><a href="#3-tạo-bucket-đầu-ra-output-bucket">3. Tạo Bucket Đầu Ra (Output Bucket)</a></li>
     <li><a href="#4-kiểm-tra-bucket">4. Kiểm Tra Bucket</a></li>
-    <li><a href="#connect"><img src="/images/3.createS3/B1_3.png" alt="Connect"></a></li>
+    <li><a href="#connect"><img src="/ws_FCJ_HoangNam/images/3.createS3/B1_3.png" alt="Connect"></a></li>
     <li><a href="#tùy-chọn-tải-file-testcsv-lên-input-bucket">Tùy Chọn: Tải file test.csv lên Input Bucket</a></li>
   </ul>
 </nav>
@@ -394,7 +472,7 @@
 <li>Vào AWS Console: <a href="https://console.aws.amazon.com/s3">https://console.aws.amazon.com/s3</a></li>
 <li>Gõ <strong>S3</strong> vào thanh tìm kiếm và chọn <strong>Amazon S3</strong></li>
 </ul>
-<p><img src="/images/3.createS3/B1_1.png" alt="Connect"></p>
+<p><img src="/ws_FCJ_HoangNam/images/3.createS3/B1_1.png" alt="Connect"></p>
 <hr>
 <h2 id="2-tạo-bucket-đầu-vào-input-bucket">2. Tạo Bucket Đầu Vào (Input Bucket)</h2>
 <ul>
@@ -415,7 +493,7 @@
 <p><strong>Object Ownership</strong>: Chọn <code>ACLs disabled</code></p>
 </li>
 </ul>
-<p><img src="/images/3.createS3/B1_2_1.png" alt="Connect"></p>
+<p><img src="/ws_FCJ_HoangNam/images/3.createS3/B1_2_1.png" alt="Connect"></p>
 <ul>
 <li>
 <p><strong>Block Public Access</strong>: Giữ mặc định <em>(chặn tất cả truy cập công khai)</em></p>
@@ -425,11 +503,11 @@
 <strong>Server-side encryption with Amazon S3-managed keys (SSE-S3)</strong></p>
 </li>
 </ul>
-<p><img src="/images/3.createS3/B1_2_2.png" alt="Connect"></p>
+<p><img src="/ws_FCJ_HoangNam/images/3.createS3/B1_2_2.png" alt="Connect"></p>
 </li>
 <li>
 <p>Nhấn <strong>Create bucket</strong></p>
-<p><img src="/images/3.createS3/B1_2_3.png" alt="Connect"></p>
+<p><img src="/ws_FCJ_HoangNam/images/3.createS3/B1_2_3.png" alt="Connect"></p>
 </li>
 </ul>
 <p>⚠️ <em>Nếu gặp lỗi <code>&quot;Bucket name already exists&quot;</code>, hãy thêm hậu tố ngẫu nhiên, ví dụ:</em><br>
@@ -453,16 +531,16 @@
 </ul>
 </li>
 </ul>
-<h2 id="connect"><img src="/images/3.createS3/B1_3.png" alt="Connect"></h2>
+<h2 id="connect"><img src="/ws_FCJ_HoangNam/images/3.createS3/B1_3.png" alt="Connect"></h2>
 <h2 id="tùy-chọn-tải-file-testcsv-lên-input-bucket">Tùy Chọn: Tải file test.csv lên Input Bucket</h2>
 <ul>
 <li>Vào bucket <code>data-processing-input-123456789012</code>
-<img src="/images/3.createS3/B1_4.png" alt="Connect"></li>
+<img src="/ws_FCJ_HoangNam/images/3.createS3/B1_4.png" alt="Connect"></li>
 <li>Nhấn <strong>Upload</strong></li>
 <li>Chọn file <code>test.csv</code> đã tạo trước đó
-<img src="/images/3.createS3/B1_4_2.png" alt="Connect"></li>
+<img src="/ws_FCJ_HoangNam/images/3.createS3/B1_4_2.png" alt="Connect"></li>
 <li>Nhấn <strong>Upload</strong> để tải lên
-<img src="/images/3.createS3/B1_4_3.png" alt="Connect"></li>
+<img src="/ws_FCJ_HoangNam/images/3.createS3/B1_4_3.png" alt="Connect"></li>
 </ul>
 <hr>
 
@@ -587,6 +665,54 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
         
@@ -609,19 +735,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/ws_FCJ_HoangNam/js/clipboard.min.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.min.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.jquery.min.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/jquery.sticky.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/featherlight.min.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/highlight.pack.js?1752154156"></script>
+    <script src="/ws_FCJ_HoangNam/js/clipboard.min.js?1752228928"></script>
+    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.min.js?1752228928"></script>
+    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.jquery.min.js?1752228928"></script>
+    <script src="/ws_FCJ_HoangNam/js/jquery.sticky.js?1752228928"></script>
+    <script src="/ws_FCJ_HoangNam/js/featherlight.min.js?1752228928"></script>
+    <script src="/ws_FCJ_HoangNam/js/highlight.pack.js?1752228928"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/ws_FCJ_HoangNam/js/modernizr.custom-3.6.0.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/learn.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/hugo-learn.js?1752154156"></script>
+    <script src="/ws_FCJ_HoangNam/js/modernizr.custom-3.6.0.js?1752228928"></script>
+    <script src="/ws_FCJ_HoangNam/js/learn.js?1752228928"></script>
+    <script src="/ws_FCJ_HoangNam/js/hugo-learn.js?1752228928"></script>
 
-    <link href="/ws_FCJ_HoangNam/mermaid/mermaid.css?1752154156" rel="stylesheet" />
-    <script src="/ws_FCJ_HoangNam/mermaid/mermaid.js?1752154156"></script>
+    <link href="/ws_FCJ_HoangNam/mermaid/mermaid.css?1752228928" rel="stylesheet" />
+    <script src="/ws_FCJ_HoangNam/mermaid/mermaid.js?1752228928"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

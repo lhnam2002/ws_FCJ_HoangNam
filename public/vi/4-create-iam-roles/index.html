@@ -12,21 +12,21 @@
     <title>Tạo IAM Roles :: Pipeline Xử Lý Dữ Liệu Serverless với Step Functions và EventBridge</title>
 
     
-    <link href="/ws_FCJ_HoangNam/css/nucleus.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/fontawesome-all.min.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/hybrid.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/featherlight.min.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/perfect-scrollbar.min.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/auto-complete.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/atom-one-dark-reasonable.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/theme.css?1752154156" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/hugo-theme.css?1752154156" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/nucleus.css?1752228928" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/fontawesome-all.min.css?1752228928" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/hybrid.css?1752228928" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/featherlight.min.css?1752228928" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/perfect-scrollbar.min.css?1752228928" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/auto-complete.css?1752228928" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/atom-one-dark-reasonable.css?1752228928" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/theme.css?1752228928" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/hugo-theme.css?1752228928" rel="stylesheet">
     
-    <link href="/ws_FCJ_HoangNam/css/theme-workshop.css?1752154156" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/theme-workshop.css?1752228928" rel="stylesheet">
     
     
 
-    <script src="/ws_FCJ_HoangNam/js/jquery-3.3.1.min.js?1752154156"></script>
+    <script src="/ws_FCJ_HoangNam/js/jquery-3.3.1.min.js?1752228928"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/lunr.min.js?1752154156"></script>
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/auto-complete.js?1752154156"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/lunr.min.js?1752228928"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/auto-complete.js?1752228928"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/ws_FCJ_HoangNam\/\/vi";
     
 </script>
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/search.js?1752154156"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/search.js?1752228928"></script>
 
     
   </div>
@@ -186,13 +186,91 @@
  
   
     
-    <li data-nav-id="/ws_FCJ_HoangNam/vi/6-cleanup/" title="Dọn dẹp tài nguyên  " class="dd-item 
+    <li data-nav-id="/ws_FCJ_HoangNam/vi/5-createlambda/" title="Tạo Lambda Funtion" class="dd-item 
         
         
         
         ">
-      <a href="/ws_FCJ_HoangNam/vi/6-cleanup/">
-          <b>6. </b>Dọn dẹp tài nguyên  
+      <a href="/ws_FCJ_HoangNam/vi/5-createlambda/">
+           <b> 5. </b> Tạo Lambda Funtion
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ws_FCJ_HoangNam/vi/6-createdynamodbtable/" title="Tạo DynamoDB Table" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ws_FCJ_HoangNam/vi/6-createdynamodbtable/">
+          <b>6. </b>Tạo DynamoDB Table
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ws_FCJ_HoangNam/vi/7-createsnstopic/" title="Tạo SNS Topic" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ws_FCJ_HoangNam/vi/7-createsnstopic/">
+           <b> 7. </b> Tạo SNS Topic
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ws_FCJ_HoangNam/vi/8-createstepfunctions/" title="Tạo Step Functions State Machine" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ws_FCJ_HoangNam/vi/8-createstepfunctions/">
+           <b> 8. </b> Tạo Step Functions State Machine
           
             <i class="fas fa-check read-icon"></i>
           
@@ -233,6 +311,18 @@
             <select id="select-language" onchange="location = this.value;">
           
           
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="http://localhost:1313/ws_FCJ_HoangNam/en/4-create-iam-roles/">English</option>
+                    
+                  
+              
+                  
+              
           
               
               
@@ -385,14 +475,17 @@
 <hr>
 <h2 id="1-truy-cập-iam-console">1. Truy cập IAM Console</h2>
 <ul>
-<li>Vào AWS Console: <a href="https://console.aws.amazon.com/iam">https://console.aws.amazon.com/iam</a></li>
-<li>Tìm <strong>IAM</strong> → chọn <strong>Roles</strong> → nhấn <strong>Create role</strong></li>
+<li>Vào AWS Console: <a href="https://console.aws.amazon.com/iam">https://console.aws.amazon.com/iam</a>
+<img src="/ws_FCJ_HoangNam/images/4.createIAMRole/B2_1.png" alt="Connect"></li>
+<li>Tìm <strong>IAM</strong> → chọn <strong>Roles</strong> → nhấn <strong>Create role</strong>
+<img src="/ws_FCJ_HoangNam/images/4.createIAMRole/B2_2.png" alt="Connect"></li>
 </ul>
 <hr>
 <h2 id="2-tạo-role-cho-lambda">2. Tạo Role Cho Lambda</h2>
 <ul>
 <li><strong>Trusted entity type</strong>: Chọn <code>AWS service</code> → chọn <code>Lambda</code></li>
-<li>Nhấn <strong>Next</strong></li>
+<li>Nhấn <strong>Next</strong>
+<img src="/ws_FCJ_HoangNam/images/4.createIAMRole/B2_2_2.png" alt="Connect"></li>
 </ul>
 <h3 id="gán-permissions">Gán Permissions:</h3>
 <ul>
@@ -413,14 +506,16 @@
 <p>🔒 <em>Khuyến nghị bảo mật</em>: Thay vì dùng <code>FullAccess</code>, nên tạo <strong>chính sách tuỳ chỉnh</strong> giới hạn quyền theo tài nguyên cụ thể (nêu ở phần sau)</p></blockquote>
 <ul>
 <li>Nhấn <strong>Next</strong> → đặt tên role: <code>LambdaDataProcessingRole</code></li>
-<li>Nhấn <strong>Create role</strong></li>
+<li>Nhấn <strong>Create role</strong>
+<img src="/ws_FCJ_HoangNam/images/4.createIAMRole/B2_2_3.png" alt="Connect"></li>
 </ul>
 <hr>
 <h2 id="3-tạo-role-cho-step-functions">3. Tạo Role Cho Step Functions</h2>
 <ul>
 <li>Quay lại IAM &gt; Roles → <strong>Create role</strong></li>
 <li><strong>Trusted entity type</strong>: Chọn <code>AWS service</code> → chọn <code>Step Functions</code></li>
-<li>Nhấn <strong>Next</strong></li>
+<li>Nhấn <strong>Next</strong>
+<img src="/ws_FCJ_HoangNam/images/4.createIAMRole/B2_3_1.png" alt="Connect"></li>
 </ul>
 <h3 id="gán-permissions-1">Gán Permissions:</h3>
 <ul>
@@ -455,6 +550,7 @@
 </ul>
 </li>
 </ul>
+<p><img src="/ws_FCJ_HoangNam/images/4.createIAMRole/B2_3_2.png" alt="Connect"></p>
 
 
 
@@ -577,6 +673,54 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
         
@@ -589,7 +733,7 @@
 			<a class="nav nav-prev" href="/ws_FCJ_HoangNam/vi/3-creates3/" title="Tạo S3 Buckets"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/ws_FCJ_HoangNam/vi/6-cleanup/" title="Dọn dẹp tài nguyên  " style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/ws_FCJ_HoangNam/vi/5-createlambda/" title="Tạo Lambda Funtion" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -599,19 +743,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/ws_FCJ_HoangNam/js/clipboard.min.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.min.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.jquery.min.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/jquery.sticky.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/featherlight.min.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/highlight.pack.js?1752154156"></script>
+    <script src="/ws_FCJ_HoangNam/js/clipboard.min.js?1752228928"></script>
+    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.min.js?1752228928"></script>
+    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.jquery.min.js?1752228928"></script>
+    <script src="/ws_FCJ_HoangNam/js/jquery.sticky.js?1752228928"></script>
+    <script src="/ws_FCJ_HoangNam/js/featherlight.min.js?1752228928"></script>
+    <script src="/ws_FCJ_HoangNam/js/highlight.pack.js?1752228928"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/ws_FCJ_HoangNam/js/modernizr.custom-3.6.0.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/learn.js?1752154156"></script>
-    <script src="/ws_FCJ_HoangNam/js/hugo-learn.js?1752154156"></script>
+    <script src="/ws_FCJ_HoangNam/js/modernizr.custom-3.6.0.js?1752228928"></script>
+    <script src="/ws_FCJ_HoangNam/js/learn.js?1752228928"></script>
+    <script src="/ws_FCJ_HoangNam/js/hugo-learn.js?1752228928"></script>
 
-    <link href="/ws_FCJ_HoangNam/mermaid/mermaid.css?1752154156" rel="stylesheet" />
-    <script src="/ws_FCJ_HoangNam/mermaid/mermaid.js?1752154156"></script>
+    <link href="/ws_FCJ_HoangNam/mermaid/mermaid.css?1752228928" rel="stylesheet" />
+    <script src="/ws_FCJ_HoangNam/mermaid/mermaid.js?1752228928"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -14,20 +14,20 @@ pre : " <b> 2. </b> "
 
 - Go to AWS Console: [https://console.aws.amazon.com/iam](https://console.aws.amazon.com/iam)
 - Select **User groups** → **Create group**
-![Connect](/images/2.preparation/bs1.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs1.png)
 - Group name: `devGr`
 - Attach permissions:
   - Choose the existing policy: `AdministratorAccess`
 - Click **Create group**
 
-![Connect](/images/2.preparation/bs2.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs2.png)
 ---
 
 ### Step 2: Create an IAM User
 
 - Go to **Users** → click **Add users**
 
-![Connect](/images/2.preparation/bs3.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs3.png)
 - Enter user name: `dev-user`
 - Choose Access Types:
   - **Programmatic access** *(for AWS CLI usage)*
@@ -35,9 +35,9 @@ pre : " <b> 2. </b> "
 - Set a password or let AWS auto-generate one
 - Add the user to group: `devGr`
 - Click **Create user**
-![Connect](/images/2.preparation/bs4.png)
-![Connect](/images/2.preparation/bs5.png)
-![Connect](/images/2.preparation/bs6.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs4.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs5.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs6.png)
 ---
 
 ### Step 3: Create an AWS Access Key
@@ -45,15 +45,15 @@ pre : " <b> 2. </b> "
 - In the user list, click on `dev-user`
 - Navigate to the **Security credentials** tab
 - Under **Access keys**, click **Create access key**
-![Connect](/images/2.preparation/bs7.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs7.png)
 - Choose usage purpose: **Command Line Interface (CLI)**
-![Connect](/images/2.preparation/bs8.png)
-![Connect](/images/2.preparation/bs9.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs8.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs9.png)
 - Once created, you will receive:
   - `Access key ID`
   - `Secret access key`
 - ⚠️ **Save it immediately**, the `Secret access key` is **shown only once**
-![Connect](/images/2.preparation/bs10.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs10.png)
 ---
 
 ## 2. Install and Configure AWS CLI
@@ -84,4 +84,28 @@ aws configure
 
   -- Output format (json)
 
-![Connect](/images/2.preparation/bs11.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs11.png)
+
+## 3. Create a Sample CSV File
+
+### Create a CSV File Using Notepad
+
+- Press Windows + R, type notepad, and hit Enter
+
+- Paste the following content:
+  ```txt
+    id,name,amount
+    1,John,100
+    2,Jane,200
+  ```
+- Go to File > Save As
+
+- File name: test.csv
+
+- Save as type: All Files (*.*)
+
+- Encoding: UTF-8
+
+✅ Make sure the file is not saved as test.csv.txt
+
+

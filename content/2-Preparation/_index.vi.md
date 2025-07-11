@@ -14,18 +14,18 @@ pre : " <b> 2. </b> "
 
 - Truy cập AWS Console: [https://console.aws.amazon.com/iam](https://console.aws.amazon.com/iam)
 - Chọn **User groups** → **Create group**
-![Connect](/images/2.preparation/bs1.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs1.png)
 - Đặt tên nhóm:  `devGr`
 - Gán quyền:
   - Chọn policy có sẵn: `AdministratorAccess`
 - Nhấn **Create group**
-![Connect](/images/2.preparation/bs2.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs2.png)
 ---
 
 ### Bước 2: Tạo IAM User
 
 - Truy cập mục **Users** → chọn **Add users**
-![Connect](/images/2.preparation/bs3.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs3.png)
 - Nhập tên: `dev-user`
 - Chọn Access Type:
   - **Programmatic access** *(để dùng AWS CLI)*
@@ -33,9 +33,9 @@ pre : " <b> 2. </b> "
 - Thiết lập mật khẩu hoặc để AWS tạo ngẫu nhiên
 - Thêm user vào group: chọn `devGr`
 - Nhấn **Create user**
-![Connect](/images/2.preparation/bs4.png)
-![Connect](/images/2.preparation/bs5.png)
-![Connect](/images/2.preparation/bs6.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs4.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs5.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs6.png)
 ---
 
 ### Bước 3: Tạo AWS Access Key
@@ -43,15 +43,15 @@ pre : " <b> 2. </b> "
 - Trong danh sách users, click vào user `dev-user`
 - Chuyển sang tab **Security credentials**
 - Ở mục **Access keys**, nhấn **Create access key**
-![Connect](/images/2.preparation/bs7.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs7.png)
 - Chọn mục đích sử dụng: **CLI**
-![Connect](/images/2.preparation/bs8.png)
-![Connect](/images/2.preparation/bs9.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs8.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs9.png)
 - Sau khi tạo thành công, bạn sẽ nhận:
   - `Access key ID`
   - `Secret access key`
 - ⚠️ **Lưu lại ngay**, vì bạn chỉ thấy `Secret access key` duy nhất một lần!
-![Connect](/images/2.preparation/bs10.png)
+![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs10.png)
 
 ---
 
@@ -82,7 +82,7 @@ aws configure
 
     -- Output format (ví dụ: json)
 
-    ![Connect](/images/2.preparation/bs11.png)
+    ![Connect](/ws_FCJ_HoangNam/images/2.preparation/bs11.png)
 
 ## 3. Tạo Tệp CSV
 

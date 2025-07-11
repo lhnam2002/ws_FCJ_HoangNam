@@ -75,7 +75,7 @@ The entire solution is deployed in the **Singapore region (ap-southeast-1)**.
 5. **CloudWatch** logs execution and triggers alerts in case of errors
 6. **SNS** sends email notifications about the final pipeline status (success or failure)
 
-![ConnectPrivate](/images/SoDo.drawio.png) 
+![ConnectPrivate](/ws_FCJ_HoangNam/images/SoDo.drawio.png) 
 
 ### Content
  1. [Introduction ](1-introduce/)

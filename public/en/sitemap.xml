@@ -54,17 +54,69 @@
                 href="http://localhost:1313/ws_FCJ_HoangNam/en/3-creates3/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ws_FCJ_HoangNam/en/6-cleanup/</loc>
-    <lastmod>1970-01-01T07:33:42+07:00</lastmod>
+    <loc>http://localhost:1313/ws_FCJ_HoangNam/en/4-create-iam-roles/</loc>
+    <lastmod>2025-06-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/ws_FCJ_HoangNam/vi/6-cleanup/"
+                href="http://localhost:1313/ws_FCJ_HoangNam/vi/4-create-iam-roles/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/ws_FCJ_HoangNam/en/6-cleanup/"
+                href="http://localhost:1313/ws_FCJ_HoangNam/en/4-create-iam-roles/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ws_FCJ_HoangNam/en/5-createlambda/</loc>
+    <lastmod>2025-06-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/ws_FCJ_HoangNam/vi/5-createlambda/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/ws_FCJ_HoangNam/en/5-createlambda/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ws_FCJ_HoangNam/en/6-createdynamodbtable/</loc>
+    <lastmod>1970-01-01T07:33:42+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/ws_FCJ_HoangNam/vi/6-createdynamodbtable/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/ws_FCJ_HoangNam/en/6-createdynamodbtable/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ws_FCJ_HoangNam/en/7-createsnstopic/</loc>
+    <lastmod>2025-06-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/ws_FCJ_HoangNam/vi/7-createsnstopic/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/ws_FCJ_HoangNam/en/7-createsnstopic/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ws_FCJ_HoangNam/en/8-createstepfunctions/</loc>
+    <lastmod>2025-06-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/ws_FCJ_HoangNam/vi/8-createstepfunctions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/ws_FCJ_HoangNam/en/8-createstepfunctions/"
                 />
   </url><url>
     <loc>http://localhost:1313/ws_FCJ_HoangNam/en/categories/</loc>

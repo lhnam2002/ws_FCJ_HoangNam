@@ -15,14 +15,16 @@ IAM Roles dùng để cấp quyền truy cập cho các dịch vụ **AWS Lambda
 ## 1. Truy cập IAM Console
 
 - Vào AWS Console: [https://console.aws.amazon.com/iam](https://console.aws.amazon.com/iam)
+![Connect](/ws_FCJ_HoangNam/images/4.createIAMRole/B2_1.png)
 - Tìm **IAM** → chọn **Roles** → nhấn **Create role**
-
+![Connect](/ws_FCJ_HoangNam/images/4.createIAMRole/B2_2.png)
 ---
 
 ## 2. Tạo Role Cho Lambda
 
 - **Trusted entity type**: Chọn `AWS service` → chọn `Lambda`
 - Nhấn **Next**
+![Connect](/ws_FCJ_HoangNam/images/4.createIAMRole/B2_2_2.png)
 
 ### Gán Permissions:
 
@@ -38,6 +40,7 @@ IAM Roles dùng để cấp quyền truy cập cho các dịch vụ **AWS Lambda
 
 - Nhấn **Next** → đặt tên role: `LambdaDataProcessingRole`
 - Nhấn **Create role**
+![Connect](/ws_FCJ_HoangNam/images/4.createIAMRole/B2_2_3.png)
 
 ---
 
@@ -46,6 +49,7 @@ IAM Roles dùng để cấp quyền truy cập cho các dịch vụ **AWS Lambda
 - Quay lại IAM > Roles → **Create role**
 - **Trusted entity type**: Chọn `AWS service` → chọn `Step Functions`
 - Nhấn **Next**
+![Connect](/ws_FCJ_HoangNam/images/4.createIAMRole/B2_3_1.png)
 
 ### Gán Permissions:
 
@@ -69,4 +73,6 @@ IAM Roles dùng để cấp quyền truy cập cho các dịch vụ **AWS Lambda
 
   - `LambdaDataProcessingRole`
   - `StepFunctionsDataProcessingRole`
+
+ ![Connect](/ws_FCJ_HoangNam/images/4.createIAMRole/B2_3_2.png) 
 

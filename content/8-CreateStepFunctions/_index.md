@@ -1,5 +1,5 @@
 ---
-title : "Tạo S3 Buckets"
+title : "Create Step Functions State Machine"
 date : 2025-06-06 
 weight : 8 
 chapter : false

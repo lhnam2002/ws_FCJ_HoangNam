@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tạo S3 Buckets on Serverless Data Processing Pipeline with Step Functions and EventBridge</title>
+    <title>Create Step Functions State Machine on Serverless Data Processing Pipeline with Step Functions and EventBridge</title>
     <link>http://localhost:1313/ws_FCJ_HoangNam/en/8-createstepfunctions/</link>
-    <description>Recent content in Tạo S3 Buckets on Serverless Data Processing Pipeline with Step Functions and EventBridge</description>
+    <description>Recent content in Create Step Functions State Machine on Serverless Data Processing Pipeline with Step Functions and EventBridge</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>

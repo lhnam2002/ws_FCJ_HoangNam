@@ -119,6 +119,58 @@
                 href="http://localhost:1313/ws_FCJ_HoangNam/en/8-createstepfunctions/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ws_FCJ_HoangNam/en/9-createeventbridge/</loc>
+    <lastmod>2025-06-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/ws_FCJ_HoangNam/vi/9-createeventbridge/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/ws_FCJ_HoangNam/en/9-createeventbridge/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ws_FCJ_HoangNam/en/10-configurecloudwatch/</loc>
+    <lastmod>2025-06-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/ws_FCJ_HoangNam/vi/10-configurecloudwatch/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/ws_FCJ_HoangNam/en/10-configurecloudwatch/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ws_FCJ_HoangNam/en/11-testthepipeline/</loc>
+    <lastmod>2025-06-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/ws_FCJ_HoangNam/vi/11-testthepipeline/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/ws_FCJ_HoangNam/en/11-testthepipeline/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ws_FCJ_HoangNam/en/12--optimizationandcostanalysis/</loc>
+    <lastmod>2025-06-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/ws_FCJ_HoangNam/vi/12--optimizationandcostanalysis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/ws_FCJ_HoangNam/en/12--optimizationandcostanalysis/"
+                />
+  </url><url>
     <loc>http://localhost:1313/ws_FCJ_HoangNam/en/categories/</loc>
     <xhtml:link
                 rel="alternate"

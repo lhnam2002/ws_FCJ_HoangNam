@@ -171,6 +171,31 @@
                 href="http://localhost:1313/ws_FCJ_HoangNam/vi/12--optimizationandcostanalysis/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ws_FCJ_HoangNam/vi/13-scalabilitytesting/</loc>
+    <lastmod>2025-06-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/ws_FCJ_HoangNam/en/13-scalabilitytesting/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/ws_FCJ_HoangNam/vi/13-scalabilitytesting/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ws_FCJ_HoangNam/vi/14-cleanup/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/ws_FCJ_HoangNam/en/14-cleanup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/ws_FCJ_HoangNam/vi/14-cleanup/"
+                />
+  </url><url>
     <loc>http://localhost:1313/ws_FCJ_HoangNam/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"

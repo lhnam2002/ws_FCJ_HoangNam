@@ -17,6 +17,8 @@ Amazon EventBridge sẽ lắng nghe sự kiện từ S3 và kích hoạt Step Fu
 - Mở AWS Console
 - Tìm **EventBridge**
 - Chọn **Rules** → nhấn **Create rule**
+![Connect](/ws_FCJ_HoangNam/images/9.createEventBridge/B7.png)
+
 
 ---
 
@@ -25,7 +27,7 @@ Amazon EventBridge sẽ lắng nghe sự kiện từ S3 và kích hoạt Step Fu
 - **Name**: `S3TriggerRule`
 - **Event source**: chọn **Event Pattern**
 - **Event pattern** (JSON):
-
+![Connect](/ws_FCJ_HoangNam/images/9.createEventBridge/B7_1.png)
 ```json
 {
   "source": ["aws.s3"],
@@ -42,12 +44,16 @@ Amazon EventBridge sẽ lắng nghe sự kiện từ S3 và kích hoạt Step Fu
 
 ```
 - Thay data-processing-input-123456789012 bằng tên bucket.
+![Connect](/ws_FCJ_HoangNam/images/9.createEventBridge/B7_2.png)
 
 ## 3. Thiết lập Target
 - Target type: Chọn Step Functions state machine
 - State machine: chọn DataProcessingWorkflow
 - Execution role: chọn Create a new role for this specific resource
 - Nhấn Create
+![Connect](/ws_FCJ_HoangNam/images/9.createEventBridge/B7_3.png)
+![Connect](/ws_FCJ_HoangNam/images/9.createEventBridge/B7_5_1.png)
+![Connect](/ws_FCJ_HoangNam/images/9.createEventBridge/B7_6.png)
 
 ## 4. Kiểm tra Rule
 - Quay lại Rules

@@ -16,18 +16,25 @@ Amazon CloudWatch helps monitor performance and detect failures in your data pip
 
 - Open **AWS Console**
 - Search for **CloudWatch** and open the service
+![Connect](/ws_FCJ_HoangNam/images/10.configureCloudWatch/B8.png)
 
 ---
 
 ## 2. Create Alarm for Step Functions
 
 - Go to **Alarms** → Click **Create alarm**
+![Connect](/ws_FCJ_HoangNam/images/10.configureCloudWatch/B8_1.png)
+
 - **Select metric**:
   - Choose: `States` → `Execution Metrics` → `ExecutionsFailed`
   - Select: `DataProcessingWorkflow`
+  ![Connect](/ws_FCJ_HoangNam/images/10.configureCloudWatch/B8_1_4.png)
+
 - **Conditions**:
   - Threshold: `Greater than or equal to 1`
   - Period: `5 minutes`
+  ![Connect](/ws_FCJ_HoangNam/images/10.configureCloudWatch/B8_2.png)
+
 - **Actions**:
   - Select: `Send notification to SNS topic`
   - SNS Topic: `PipelineNotifications`

@@ -16,6 +16,7 @@ Amazon DynamoDB is used to store metadata for each pipeline execution.
 
 - Go to AWS Console
 - Search for **DynamoDB** → select **Tables** → click **Create table**
+![Connect](/ws_FCJ_HoangNam/images/6.createDynamoDBTable/B4.png)
 
 ---
 
@@ -26,6 +27,8 @@ Amazon DynamoDB is used to store metadata for each pipeline execution.
 - **Sort key**: *(leave empty)*
 - **Table settings**: Select **On-demand (Pay-per-request)** for automatic scaling
 - Click **Create table**
+![Connect](/ws_FCJ_HoangNam/images/6.createDynamoDBTable/B4_1.png)
+![Connect](/ws_FCJ_HoangNam/images/6.createDynamoDBTable/B4_2.png)
 
 ---
 
@@ -33,3 +36,4 @@ Amazon DynamoDB is used to store metadata for each pipeline execution.
 
 - Go to the **Tables** section
 - Ensure the `ProcessingMetadata` table has been created successfully
+![Connect](/ws_FCJ_HoangNam/images/6.createDynamoDBTable/B4_4.png)

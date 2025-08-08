@@ -12,21 +12,21 @@
     <title>Tạo SNS Topic :: Pipeline Xử Lý Dữ Liệu Serverless với Step Functions và EventBridge</title>
 
     
-    <link href="/ws_FCJ_HoangNam/css/nucleus.css?1752664941" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/fontawesome-all.min.css?1752664941" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/hybrid.css?1752664941" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/featherlight.min.css?1752664941" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/perfect-scrollbar.min.css?1752664941" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/auto-complete.css?1752664941" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/atom-one-dark-reasonable.css?1752664941" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/theme.css?1752664941" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/hugo-theme.css?1752664941" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/nucleus.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/fontawesome-all.min.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/hybrid.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/featherlight.min.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/perfect-scrollbar.min.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/auto-complete.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/atom-one-dark-reasonable.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/theme.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/hugo-theme.css?1754653072" rel="stylesheet">
     
-    <link href="/ws_FCJ_HoangNam/css/theme-workshop.css?1752664941" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/theme-workshop.css?1754653072" rel="stylesheet">
     
     
 
-    <script src="/ws_FCJ_HoangNam/js/jquery-3.3.1.min.js?1752664941"></script>
+    <script src="/ws_FCJ_HoangNam/js/jquery-3.3.1.min.js?1754653072"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/lunr.min.js?1752664941"></script>
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/auto-complete.js?1752664941"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/lunr.min.js?1754653072"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/auto-complete.js?1754653072"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/ws_FCJ_HoangNam\/\/vi";
     
 </script>
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/search.js?1752664941"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/search.js?1754653072"></script>
 
     
   </div>
@@ -412,6 +412,32 @@
  
 
           
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ws_FCJ_HoangNam/vi/14-cleanup/" title="Dọn dẹp tài nguyên" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ws_FCJ_HoangNam/vi/14-cleanup/">
+           <b> 14. </b> Dọn dẹp tài nguyên
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
          
     </ul>
 
@@ -598,15 +624,18 @@
 <h2 id="1-truy-cập-sns-console">1. Truy cập SNS Console</h2>
 <ul>
 <li>Mở AWS Console</li>
-<li>Tìm <strong>SNS</strong></li>
-<li>Chọn <strong>Topics</strong> → nhấn <strong>Create topic</strong></li>
+<li>Tìm <strong>SNS</strong>
+<img src="/ws_FCJ_HoangNam/images/7.createSNSTopic/B5.png" alt="Connect"></li>
+<li>Chọn <strong>Topics</strong> → nhấn <strong>Create topic</strong>
+<img src="/ws_FCJ_HoangNam/images/7.createSNSTopic/B5_1.png" alt="Connect"></li>
 </ul>
 <hr>
 <h2 id="2-cấu-hình-topic">2. Cấu hình Topic</h2>
 <ul>
 <li><strong>Type</strong>: <code>Standard</code></li>
 <li><strong>Name</strong>: <code>PipelineNotifications</code></li>
-<li>Nhấn <strong>Create topic</strong></li>
+<li>Nhấn <strong>Create topic</strong>
+<img src="/ws_FCJ_HoangNam/images/7.createSNSTopic/B5_2.png" alt="Connect"></li>
 </ul>
 <hr>
 <h2 id="3-tạo-subscription-đăng-ký-nhận-thông-báo">3. Tạo Subscription (Đăng ký nhận thông báo)</h2>
@@ -615,14 +644,16 @@
 <li><strong>Protocol</strong>: <code>Email</code></li>
 <li><strong>Endpoint</strong>: Nhập địa chỉ email bạn muốn nhận thông báo</li>
 <li>Nhấn <strong>Create subscription</strong></li>
-<li>Mở email và <strong>xác nhận đăng ký</strong> bằng cách nhấn vào liên kết xác nhận</li>
+<li>Mở email và <strong>xác nhận đăng ký</strong> bằng cách nhấn vào liên kết xác nhận
+<img src="/ws_FCJ_HoangNam/images/7.createSNSTopic/B5_3.png" alt="Connect"></li>
 </ul>
 <hr>
 <h2 id="4-lấy-arn-của-topic">4. Lấy ARN của Topic</h2>
 <ul>
 <li>Quay lại tab <strong>Topics</strong></li>
 <li>Nhấn vào <code>PipelineNotifications</code></li>
-<li>Ghi lại <strong>Topic ARN</strong>, ví dụ: (arn:aws:sns:ap-southeast-1:123456789012:PipelineNotifications)</li>
+<li>Ghi lại <strong>Topic ARN</strong>, ví dụ: (arn:aws:sns:ap-southeast-1:123456789012:PipelineNotifications)
+<img src="/ws_FCJ_HoangNam/images/7.createSNSTopic/B5_3_1.png" alt="Connect"></li>
 </ul>
 
 
@@ -874,6 +905,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
         
@@ -896,19 +943,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/ws_FCJ_HoangNam/js/clipboard.min.js?1752664941"></script>
-    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.min.js?1752664941"></script>
-    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.jquery.min.js?1752664941"></script>
-    <script src="/ws_FCJ_HoangNam/js/jquery.sticky.js?1752664941"></script>
-    <script src="/ws_FCJ_HoangNam/js/featherlight.min.js?1752664941"></script>
-    <script src="/ws_FCJ_HoangNam/js/highlight.pack.js?1752664941"></script>
+    <script src="/ws_FCJ_HoangNam/js/clipboard.min.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.min.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.jquery.min.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/jquery.sticky.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/featherlight.min.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/highlight.pack.js?1754653072"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/ws_FCJ_HoangNam/js/modernizr.custom-3.6.0.js?1752664941"></script>
-    <script src="/ws_FCJ_HoangNam/js/learn.js?1752664941"></script>
-    <script src="/ws_FCJ_HoangNam/js/hugo-learn.js?1752664941"></script>
+    <script src="/ws_FCJ_HoangNam/js/modernizr.custom-3.6.0.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/learn.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/hugo-learn.js?1754653072"></script>
 
-    <link href="/ws_FCJ_HoangNam/mermaid/mermaid.css?1752664941" rel="stylesheet" />
-    <script src="/ws_FCJ_HoangNam/mermaid/mermaid.js?1752664941"></script>
+    <link href="/ws_FCJ_HoangNam/mermaid/mermaid.css?1754653072" rel="stylesheet" />
+    <script src="/ws_FCJ_HoangNam/mermaid/mermaid.js?1754653072"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

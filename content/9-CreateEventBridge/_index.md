@@ -17,6 +17,7 @@ Amazon EventBridge will listen for S3 events and trigger the Step Functions work
 - Go to AWS Console
 - Search for **EventBridge**
 - Select **Rules** → click **Create rule**
+![Connect](/ws_FCJ_HoangNam/images/9.createEventBridge/B7.png)
 
 ---
 
@@ -25,7 +26,7 @@ Amazon EventBridge will listen for S3 events and trigger the Step Functions work
 - **Name**: `S3TriggerRule`
 - **Event source**: select **Event Pattern**
 - **Event pattern** (JSON):
-
+![Connect](/ws_FCJ_HoangNam/images/9.createEventBridge/B7_1.png)
 ```json
 {
   "source": ["aws.s3"],
@@ -42,12 +43,17 @@ Amazon EventBridge will listen for S3 events and trigger the Step Functions work
 
 ```
 - Note: Replace data-processing-input-123456789012 with your actual S3 bucket name.
+![Connect](/ws_FCJ_HoangNam/images/9.createEventBridge/B7_2.png)
 
 ## 3. Set Target
 - Target type: Select Step Functions state machine
 - State machine: choose DataProcessingWorkflow
 - Execution role: select Create a new role for this specific resource
 -Click Create
+![Connect](/ws_FCJ_HoangNam/images/9.createEventBridge/B7_3.png)
+![Connect](/ws_FCJ_HoangNam/images/9.createEventBridge/B7_5_1.png)
+![Connect](/ws_FCJ_HoangNam/images/9.createEventBridge/B7_6.png)
+
 
 ## 4. Verify the Rule
 - Return to the Rules section

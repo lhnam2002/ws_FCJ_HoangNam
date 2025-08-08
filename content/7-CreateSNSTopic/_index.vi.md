@@ -16,7 +16,9 @@ Amazon SNS sẽ được dùng để gửi thông báo trạng thái pipeline qu
 
 - Mở AWS Console
 - Tìm **SNS**
+![Connect](/ws_FCJ_HoangNam/images/7.createSNSTopic/B5.png)
 - Chọn **Topics** → nhấn **Create topic**
+![Connect](/ws_FCJ_HoangNam/images/7.createSNSTopic/B5_1.png)
 
 ---
 
@@ -25,7 +27,7 @@ Amazon SNS sẽ được dùng để gửi thông báo trạng thái pipeline qu
 - **Type**: `Standard`
 - **Name**: `PipelineNotifications`
 - Nhấn **Create topic**
-
+![Connect](/ws_FCJ_HoangNam/images/7.createSNSTopic/B5_2.png)
 ---
 
 ## 3. Tạo Subscription (Đăng ký nhận thông báo)
@@ -35,7 +37,7 @@ Amazon SNS sẽ được dùng để gửi thông báo trạng thái pipeline qu
 - **Endpoint**: Nhập địa chỉ email bạn muốn nhận thông báo
 - Nhấn **Create subscription**
 - Mở email và **xác nhận đăng ký** bằng cách nhấn vào liên kết xác nhận
-
+![Connect](/ws_FCJ_HoangNam/images/7.createSNSTopic/B5_3.png)
 ---
 
 ## 4. Lấy ARN của Topic
@@ -43,4 +45,5 @@ Amazon SNS sẽ được dùng để gửi thông báo trạng thái pipeline qu
 - Quay lại tab **Topics**
 - Nhấn vào `PipelineNotifications`
 - Ghi lại **Topic ARN**, ví dụ: (arn:aws:sns:ap-southeast-1:123456789012:PipelineNotifications)
+![Connect](/ws_FCJ_HoangNam/images/7.createSNSTopic/B5_3_1.png)
   

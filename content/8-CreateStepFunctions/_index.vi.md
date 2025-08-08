@@ -17,6 +17,7 @@ AWS Step Functions sẽ điều phối toàn bộ pipeline xử lý dữ liệu 
 - Mở AWS Console
 - Tìm **Step Functions**
 - Chọn **State machines** → nhấn **Create state machine**
+![Connect](/ws_FCJ_HoangNam/images/8.createStepFunctions/B6.png)
 
 ---
 
@@ -171,11 +172,16 @@ AWS Step Functions sẽ điều phối toàn bộ pipeline xử lý dữ liệu 
 - **Permissions**:
   - Chọn **Choose an existing role**
   - Chọn role: `StepFunctionsDataProcessingRole`
+  ![Connect](/ws_FCJ_HoangNam/images/8.createStepFunctions/B6_4.png)
+
 - **Logging**:
   - Bật `Log to CloudWatch Logs`
   - Chọn mức log: `ALL`
 
 - Nhấn **Create state machine**
+![Connect](/ws_FCJ_HoangNam/images/8.createStepFunctions/B6_4_1.png)
+
+
 
 ---
 

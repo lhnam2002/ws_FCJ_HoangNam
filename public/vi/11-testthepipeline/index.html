@@ -12,21 +12,21 @@
     <title>Tạo EventBridge Rule :: Pipeline Xử Lý Dữ Liệu Serverless với Step Functions và EventBridge</title>
 
     
-    <link href="/ws_FCJ_HoangNam/css/nucleus.css?1752665210" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/fontawesome-all.min.css?1752665210" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/hybrid.css?1752665210" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/featherlight.min.css?1752665210" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/perfect-scrollbar.min.css?1752665210" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/auto-complete.css?1752665210" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/atom-one-dark-reasonable.css?1752665210" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/theme.css?1752665210" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/hugo-theme.css?1752665210" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/nucleus.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/fontawesome-all.min.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/hybrid.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/featherlight.min.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/perfect-scrollbar.min.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/auto-complete.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/atom-one-dark-reasonable.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/theme.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/hugo-theme.css?1754653072" rel="stylesheet">
     
-    <link href="/ws_FCJ_HoangNam/css/theme-workshop.css?1752665210" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/theme-workshop.css?1754653072" rel="stylesheet">
     
     
 
-    <script src="/ws_FCJ_HoangNam/js/jquery-3.3.1.min.js?1752665210"></script>
+    <script src="/ws_FCJ_HoangNam/js/jquery-3.3.1.min.js?1754653072"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/lunr.min.js?1752665210"></script>
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/auto-complete.js?1752665210"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/lunr.min.js?1754653072"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/auto-complete.js?1754653072"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/ws_FCJ_HoangNam\/\/vi";
     
 </script>
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/search.js?1752665210"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/search.js?1754653072"></script>
 
     
   </div>
@@ -412,6 +412,32 @@
  
 
           
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ws_FCJ_HoangNam/vi/14-cleanup/" title="Dọn dẹp tài nguyên" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ws_FCJ_HoangNam/vi/14-cleanup/">
+           <b> 14. </b> Dọn dẹp tài nguyên
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
          
     </ul>
 
@@ -601,7 +627,9 @@
 <li>Truy cập <strong>S3 Console</strong></li>
 <li>Vào bucket: <code>data-processing-input-123456789012</code></li>
 <li>Nhấn <strong>Upload</strong>, chọn tệp <code>test.csv</code> đã tạo</li>
-<li>Nhấn <strong>Upload</strong></li>
+<li>Nhấn <strong>Upload</strong>
+<img src="/ws_FCJ_HoangNam/images/11.testThePipeline/B9_BS.png" alt="Connect">
+<img src="/ws_FCJ_HoangNam/images/11.testThePipeline/B9_BS1.png" alt="Connect"></li>
 </ul>
 <hr>
 <h2 id="2-kiểm-tra-step-functions">2. Kiểm Tra Step Functions</h2>
@@ -623,12 +651,22 @@
 <hr>
 <h2 id="3-kiểm-tra-output">3. Kiểm Tra Output</h2>
 <ul>
-<li>Vào S3 bucket <code>data-processing-output-123456789012</code></li>
-<li>Tìm thư mục <code>results/</code> và mở file JSON kết quả (ví dụ: <code>processed_&lt;timestamp&gt;.json</code>)</li>
-<li>Truy cập <strong>DynamoDB Console</strong>
+<li>
+<p>Vào S3 bucket <code>data-processing-output-123456789012</code></p>
+</li>
+<li>
+<p>Tìm thư mục <code>results/</code> và mở file JSON kết quả (ví dụ: <code>processed_&lt;timestamp&gt;.json</code>)
+<img src="/ws_FCJ_HoangNam/images/11.testThePipeline/B9_BS3.png" alt="Connect">
+<img src="/ws_FCJ_HoangNam/images/11.testThePipeline/B9_BS4.png" alt="Connect"></p>
+</li>
+<li>
+<p>Truy cập <strong>DynamoDB Console</strong></p>
 <ul>
 <li>Mở bảng <code>ProcessingMetadata</code></li>
-<li>Chọn <strong>Explore table items</strong> để xem thông tin metadata</li>
+<li>Chọn <strong>Explore table items</strong> để xem thông tin metadata
+<img src="/ws_FCJ_HoangNam/images/11.testThePipeline/B9_BS5.png" alt="Connect">
+<img src="/ws_FCJ_HoangNam/images/11.testThePipeline/B9_BS6.png" alt="Connect">
+<img src="/ws_FCJ_HoangNam/images/11.testThePipeline/B9_BS7.png" alt="Connect"></li>
 </ul>
 </li>
 </ul>
@@ -636,7 +674,8 @@
 <h2 id="4-kiểm-tra-sns-notifications">4. Kiểm Tra SNS Notifications</h2>
 <ul>
 <li>Mở hộp thư email của bạn</li>
-<li>Kiểm tra email từ SNS topic <code>PipelineNotifications</code></li>
+<li>Kiểm tra email từ SNS topic <code>PipelineNotifications</code>
+<img src="/ws_FCJ_HoangNam/images/11.testThePipeline/B9_BS8.png" alt="Connect"></li>
 </ul>
 <hr>
 <h2 id="5-xử-lý-lỗi-nếu-có">5. Xử Lý Lỗi (nếu có)</h2>
@@ -899,6 +938,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
         
@@ -921,19 +976,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/ws_FCJ_HoangNam/js/clipboard.min.js?1752665210"></script>
-    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.min.js?1752665210"></script>
-    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.jquery.min.js?1752665210"></script>
-    <script src="/ws_FCJ_HoangNam/js/jquery.sticky.js?1752665210"></script>
-    <script src="/ws_FCJ_HoangNam/js/featherlight.min.js?1752665210"></script>
-    <script src="/ws_FCJ_HoangNam/js/highlight.pack.js?1752665210"></script>
+    <script src="/ws_FCJ_HoangNam/js/clipboard.min.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.min.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.jquery.min.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/jquery.sticky.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/featherlight.min.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/highlight.pack.js?1754653072"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/ws_FCJ_HoangNam/js/modernizr.custom-3.6.0.js?1752665210"></script>
-    <script src="/ws_FCJ_HoangNam/js/learn.js?1752665210"></script>
-    <script src="/ws_FCJ_HoangNam/js/hugo-learn.js?1752665210"></script>
+    <script src="/ws_FCJ_HoangNam/js/modernizr.custom-3.6.0.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/learn.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/hugo-learn.js?1754653072"></script>
 
-    <link href="/ws_FCJ_HoangNam/mermaid/mermaid.css?1752665210" rel="stylesheet" />
-    <script src="/ws_FCJ_HoangNam/mermaid/mermaid.js?1752665210"></script>
+    <link href="/ws_FCJ_HoangNam/mermaid/mermaid.css?1754653072" rel="stylesheet" />
+    <script src="/ws_FCJ_HoangNam/mermaid/mermaid.js?1754653072"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -18,6 +18,9 @@ Thực hiện kiểm tra toàn bộ quy trình xử lý dữ liệu sau khi hoà
 - Vào bucket: `data-processing-input-123456789012`
 - Nhấn **Upload**, chọn tệp `test.csv` đã tạo
 - Nhấn **Upload**
+![Connect](/ws_FCJ_HoangNam/images/11.testThePipeline/B9_BS.png)
+![Connect](/ws_FCJ_HoangNam/images/11.testThePipeline/B9_BS1.png)
+
 
 ---
 
@@ -40,9 +43,15 @@ Thực hiện kiểm tra toàn bộ quy trình xử lý dữ liệu sau khi hoà
 
 - Vào S3 bucket `data-processing-output-123456789012`
 - Tìm thư mục `results/` và mở file JSON kết quả (ví dụ: `processed_<timestamp>.json`)
+![Connect](/ws_FCJ_HoangNam/images/11.testThePipeline/B9_BS3.png)
+![Connect](/ws_FCJ_HoangNam/images/11.testThePipeline/B9_BS4.png)
+
 - Truy cập **DynamoDB Console**
   - Mở bảng `ProcessingMetadata`
   - Chọn **Explore table items** để xem thông tin metadata
+ ![Connect](/ws_FCJ_HoangNam/images/11.testThePipeline/B9_BS5.png)
+ ![Connect](/ws_FCJ_HoangNam/images/11.testThePipeline/B9_BS6.png)
+ ![Connect](/ws_FCJ_HoangNam/images/11.testThePipeline/B9_BS7.png)
 
 ---
 
@@ -50,6 +59,8 @@ Thực hiện kiểm tra toàn bộ quy trình xử lý dữ liệu sau khi hoà
 
 - Mở hộp thư email của bạn
 - Kiểm tra email từ SNS topic `PipelineNotifications`
+![Connect](/ws_FCJ_HoangNam/images/11.testThePipeline/B9_BS8.png)
+
 
 ---
 

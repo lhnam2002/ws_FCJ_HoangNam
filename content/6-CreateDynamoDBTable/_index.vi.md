@@ -16,7 +16,7 @@ DynamoDB sẽ được sử dụng để lưu trữ metadata cho từng lần th
 
 - Mở AWS Console
 - Tìm **DynamoDB** → chọn **Tables** → nhấn **Create table**
-
+![Connect](/ws_FCJ_HoangNam/images/6.createDynamoDBTable/B4.png)
 ---
 
 ## 2. Cấu hình bảng
@@ -26,6 +26,8 @@ DynamoDB sẽ được sử dụng để lưu trữ metadata cho từng lần th
 - **Sort key**: *(để trống)*
 - **Table settings**: Chọn **On-demand (Pay-per-request)** để tự động co giãn theo lưu lượng
 - Nhấn **Create table**
+![Connect](/ws_FCJ_HoangNam/images/6.createDynamoDBTable/B4_1.png)
+![Connect](/ws_FCJ_HoangNam/images/6.createDynamoDBTable/B4_2.png)
 
 ---
 
@@ -33,5 +35,6 @@ DynamoDB sẽ được sử dụng để lưu trữ metadata cho từng lần th
 
 - Truy cập mục **Tables**
 - Đảm bảo bảng `ProcessingMetadata` đã được tạo thành công
+![Connect](/ws_FCJ_HoangNam/images/6.createDynamoDBTable/B4_4.png)
 
 

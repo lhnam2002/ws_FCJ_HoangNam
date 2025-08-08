@@ -12,21 +12,21 @@
     <title>Tạo EventBridge Rule :: Pipeline Xử Lý Dữ Liệu Serverless với Step Functions và EventBridge</title>
 
     
-    <link href="/ws_FCJ_HoangNam/css/nucleus.css?1752661890" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/fontawesome-all.min.css?1752661890" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/hybrid.css?1752661890" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/featherlight.min.css?1752661890" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/perfect-scrollbar.min.css?1752661890" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/auto-complete.css?1752661890" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/atom-one-dark-reasonable.css?1752661890" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/theme.css?1752661890" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/hugo-theme.css?1752661890" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/nucleus.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/fontawesome-all.min.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/hybrid.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/featherlight.min.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/perfect-scrollbar.min.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/auto-complete.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/atom-one-dark-reasonable.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/theme.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/hugo-theme.css?1754653072" rel="stylesheet">
     
-    <link href="/ws_FCJ_HoangNam/css/theme-workshop.css?1752661890" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/theme-workshop.css?1754653072" rel="stylesheet">
     
     
 
-    <script src="/ws_FCJ_HoangNam/js/jquery-3.3.1.min.js?1752661890"></script>
+    <script src="/ws_FCJ_HoangNam/js/jquery-3.3.1.min.js?1754653072"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/lunr.min.js?1752661890"></script>
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/auto-complete.js?1752661890"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/lunr.min.js?1754653072"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/auto-complete.js?1754653072"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/ws_FCJ_HoangNam\/\/vi";
     
 </script>
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/search.js?1752661890"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/search.js?1754653072"></script>
 
     
   </div>
@@ -368,13 +368,65 @@
  
   
     
-    <li data-nav-id="/ws_FCJ_HoangNam/vi/12--optimizationandcostanalysis/" title="Tạo EventBridge Rule" class="dd-item 
+    <li data-nav-id="/ws_FCJ_HoangNam/vi/12--optimizationandcostanalysis/" title="Tối Ưu Hóa và Phân Tích Chi Phí" class="dd-item 
         
         
         
         ">
       <a href="/ws_FCJ_HoangNam/vi/12--optimizationandcostanalysis/">
-           <b> 12. </b> Tạo EventBridge Rule
+           <b> 12. </b> Tối Ưu Hóa và Phân Tích Chi Phí
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ws_FCJ_HoangNam/vi/13-scalabilitytesting/" title="Kiểm Tra Khả Năng Mở Rộng" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ws_FCJ_HoangNam/vi/13-scalabilitytesting/">
+           <b> 13. </b> Kiểm Tra Khả Năng Mở Rộng
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ws_FCJ_HoangNam/vi/14-cleanup/" title="Dọn dẹp tài nguyên" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ws_FCJ_HoangNam/vi/14-cleanup/">
+           <b> 14. </b> Dọn dẹp tài nguyên
           
             <i class="fas fa-check read-icon"></i>
           
@@ -573,14 +625,16 @@
 <ul>
 <li>Mở AWS Console</li>
 <li>Tìm <strong>EventBridge</strong></li>
-<li>Chọn <strong>Rules</strong> → nhấn <strong>Create rule</strong></li>
+<li>Chọn <strong>Rules</strong> → nhấn <strong>Create rule</strong>
+<img src="/ws_FCJ_HoangNam/images/9.createEventBridge/B7.png" alt="Connect"></li>
 </ul>
 <hr>
 <h2 id="2-cấu-hình-rule">2. Cấu hình Rule</h2>
 <ul>
 <li><strong>Name</strong>: <code>S3TriggerRule</code></li>
 <li><strong>Event source</strong>: chọn <strong>Event Pattern</strong></li>
-<li><strong>Event pattern</strong> (JSON):</li>
+<li><strong>Event pattern</strong> (JSON):
+<img src="/ws_FCJ_HoangNam/images/9.createEventBridge/B7_1.png" alt="Connect"></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;source&#34;</span>: [<span style="color:#e6db74">&#34;aws.s3&#34;</span>],
@@ -595,14 +649,18 @@
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><ul>
-<li>Thay data-processing-input-123456789012 bằng tên bucket.</li>
+<li>Thay data-processing-input-123456789012 bằng tên bucket.
+<img src="/ws_FCJ_HoangNam/images/9.createEventBridge/B7_2.png" alt="Connect"></li>
 </ul>
 <h2 id="3-thiết-lập-target">3. Thiết lập Target</h2>
 <ul>
 <li>Target type: Chọn Step Functions state machine</li>
 <li>State machine: chọn DataProcessingWorkflow</li>
 <li>Execution role: chọn Create a new role for this specific resource</li>
-<li>Nhấn Create</li>
+<li>Nhấn Create
+<img src="/ws_FCJ_HoangNam/images/9.createEventBridge/B7_3.png" alt="Connect">
+<img src="/ws_FCJ_HoangNam/images/9.createEventBridge/B7_5_1.png" alt="Connect">
+<img src="/ws_FCJ_HoangNam/images/9.createEventBridge/B7_6.png" alt="Connect"></li>
 </ul>
 <h2 id="4-kiểm-tra-rule">4. Kiểm tra Rule</h2>
 <ul>
@@ -843,6 +901,38 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
         
@@ -865,19 +955,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/ws_FCJ_HoangNam/js/clipboard.min.js?1752661890"></script>
-    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.min.js?1752661890"></script>
-    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.jquery.min.js?1752661890"></script>
-    <script src="/ws_FCJ_HoangNam/js/jquery.sticky.js?1752661890"></script>
-    <script src="/ws_FCJ_HoangNam/js/featherlight.min.js?1752661890"></script>
-    <script src="/ws_FCJ_HoangNam/js/highlight.pack.js?1752661890"></script>
+    <script src="/ws_FCJ_HoangNam/js/clipboard.min.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.min.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.jquery.min.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/jquery.sticky.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/featherlight.min.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/highlight.pack.js?1754653072"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/ws_FCJ_HoangNam/js/modernizr.custom-3.6.0.js?1752661890"></script>
-    <script src="/ws_FCJ_HoangNam/js/learn.js?1752661890"></script>
-    <script src="/ws_FCJ_HoangNam/js/hugo-learn.js?1752661890"></script>
+    <script src="/ws_FCJ_HoangNam/js/modernizr.custom-3.6.0.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/learn.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/hugo-learn.js?1754653072"></script>
 
-    <link href="/ws_FCJ_HoangNam/mermaid/mermaid.css?1752661890" rel="stylesheet" />
-    <script src="/ws_FCJ_HoangNam/mermaid/mermaid.js?1752661890"></script>
+    <link href="/ws_FCJ_HoangNam/mermaid/mermaid.css?1754653072" rel="stylesheet" />
+    <script src="/ws_FCJ_HoangNam/mermaid/mermaid.js?1754653072"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

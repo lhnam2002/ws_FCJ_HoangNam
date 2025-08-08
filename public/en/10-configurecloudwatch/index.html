@@ -12,21 +12,21 @@
     <title>Configure CloudWatch :: Serverless Data Processing Pipeline with Step Functions and EventBridge</title>
 
     
-    <link href="/ws_FCJ_HoangNam/css/nucleus.css?1752664949" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/fontawesome-all.min.css?1752664949" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/hybrid.css?1752664949" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/featherlight.min.css?1752664949" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/perfect-scrollbar.min.css?1752664949" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/auto-complete.css?1752664949" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/atom-one-dark-reasonable.css?1752664949" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/theme.css?1752664949" rel="stylesheet">
-    <link href="/ws_FCJ_HoangNam/css/hugo-theme.css?1752664949" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/nucleus.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/fontawesome-all.min.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/hybrid.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/featherlight.min.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/perfect-scrollbar.min.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/auto-complete.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/atom-one-dark-reasonable.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/theme.css?1754653072" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/hugo-theme.css?1754653072" rel="stylesheet">
     
-    <link href="/ws_FCJ_HoangNam/css/theme-workshop.css?1752664949" rel="stylesheet">
+    <link href="/ws_FCJ_HoangNam/css/theme-workshop.css?1754653072" rel="stylesheet">
     
     
 
-    <script src="/ws_FCJ_HoangNam/js/jquery-3.3.1.min.js?1752664949"></script>
+    <script src="/ws_FCJ_HoangNam/js/jquery-3.3.1.min.js?1754653072"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/lunr.min.js?1752664949"></script>
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/auto-complete.js?1752664949"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/lunr.min.js?1754653072"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/auto-complete.js?1754653072"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/ws_FCJ_HoangNam\/\/en";
     
 </script>
-<script type="text/javascript" src="/ws_FCJ_HoangNam/js/search.js?1752664949"></script>
+<script type="text/javascript" src="/ws_FCJ_HoangNam/js/search.js?1754653072"></script>
 
     
   </div>
@@ -394,13 +394,39 @@
  
   
     
-    <li data-nav-id="/ws_FCJ_HoangNam/en/13-scalabilitytesting/" title="" class="dd-item 
+    <li data-nav-id="/ws_FCJ_HoangNam/en/13-scalabilitytesting/" title="Scalability Testing" class="dd-item 
         
         
         
         ">
       <a href="/ws_FCJ_HoangNam/en/13-scalabilitytesting/">
+           <b> 13. </b> Scalability Testing
           
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ws_FCJ_HoangNam/en/14-cleanup/" title="Clean Up" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ws_FCJ_HoangNam/en/14-cleanup/">
+           <b> 14. </b> Clean Up
           
             <i class="fas fa-check read-icon"></i>
           
@@ -608,32 +634,45 @@
 <h2 id="1-access-the-cloudwatch-console">1. Access the CloudWatch Console</h2>
 <ul>
 <li>Open <strong>AWS Console</strong></li>
-<li>Search for <strong>CloudWatch</strong> and open the service</li>
+<li>Search for <strong>CloudWatch</strong> and open the service
+<img src="/ws_FCJ_HoangNam/images/10.configureCloudWatch/B8.png" alt="Connect"></li>
 </ul>
 <hr>
 <h2 id="2-create-alarm-for-step-functions">2. Create Alarm for Step Functions</h2>
 <ul>
-<li>Go to <strong>Alarms</strong> → Click <strong>Create alarm</strong></li>
-<li><strong>Select metric</strong>:
+<li>
+<p>Go to <strong>Alarms</strong> → Click <strong>Create alarm</strong>
+<img src="/ws_FCJ_HoangNam/images/10.configureCloudWatch/B8_1.png" alt="Connect"></p>
+</li>
+<li>
+<p><strong>Select metric</strong>:</p>
 <ul>
 <li>Choose: <code>States</code> → <code>Execution Metrics</code> → <code>ExecutionsFailed</code></li>
-<li>Select: <code>DataProcessingWorkflow</code></li>
+<li>Select: <code>DataProcessingWorkflow</code>
+<img src="/ws_FCJ_HoangNam/images/10.configureCloudWatch/B8_1_4.png" alt="Connect"></li>
 </ul>
 </li>
-<li><strong>Conditions</strong>:
+<li>
+<p><strong>Conditions</strong>:</p>
 <ul>
 <li>Threshold: <code>Greater than or equal to 1</code></li>
-<li>Period: <code>5 minutes</code></li>
+<li>Period: <code>5 minutes</code>
+<img src="/ws_FCJ_HoangNam/images/10.configureCloudWatch/B8_2.png" alt="Connect"></li>
 </ul>
 </li>
-<li><strong>Actions</strong>:
+<li>
+<p><strong>Actions</strong>:</p>
 <ul>
 <li>Select: <code>Send notification to SNS topic</code></li>
 <li>SNS Topic: <code>PipelineNotifications</code></li>
 </ul>
 </li>
-<li><strong>Alarm name</strong>: <code>StepFunctionsFailureAlarm</code></li>
-<li>Click <strong>Create</strong></li>
+<li>
+<p><strong>Alarm name</strong>: <code>StepFunctionsFailureAlarm</code></p>
+</li>
+<li>
+<p>Click <strong>Create</strong></p>
+</li>
 </ul>
 <hr>
 <h2 id="3-create-alarms-for-lambda-functions">3. Create Alarms for Lambda Functions</h2>
@@ -945,6 +984,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
         
@@ -967,19 +1022,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/ws_FCJ_HoangNam/js/clipboard.min.js?1752664949"></script>
-    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.min.js?1752664949"></script>
-    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.jquery.min.js?1752664949"></script>
-    <script src="/ws_FCJ_HoangNam/js/jquery.sticky.js?1752664949"></script>
-    <script src="/ws_FCJ_HoangNam/js/featherlight.min.js?1752664949"></script>
-    <script src="/ws_FCJ_HoangNam/js/highlight.pack.js?1752664949"></script>
+    <script src="/ws_FCJ_HoangNam/js/clipboard.min.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.min.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/perfect-scrollbar.jquery.min.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/jquery.sticky.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/featherlight.min.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/highlight.pack.js?1754653072"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/ws_FCJ_HoangNam/js/modernizr.custom-3.6.0.js?1752664949"></script>
-    <script src="/ws_FCJ_HoangNam/js/learn.js?1752664949"></script>
-    <script src="/ws_FCJ_HoangNam/js/hugo-learn.js?1752664949"></script>
+    <script src="/ws_FCJ_HoangNam/js/modernizr.custom-3.6.0.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/learn.js?1754653072"></script>
+    <script src="/ws_FCJ_HoangNam/js/hugo-learn.js?1754653072"></script>
 
-    <link href="/ws_FCJ_HoangNam/mermaid/mermaid.css?1752664949" rel="stylesheet" />
-    <script src="/ws_FCJ_HoangNam/mermaid/mermaid.js?1752664949"></script>
+    <link href="/ws_FCJ_HoangNam/mermaid/mermaid.css?1754653072" rel="stylesheet" />
+    <script src="/ws_FCJ_HoangNam/mermaid/mermaid.js?1754653072"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

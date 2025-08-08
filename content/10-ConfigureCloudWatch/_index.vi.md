@@ -16,18 +16,25 @@ Amazon CloudWatch sẽ giúp bạn giám sát hiệu suất và lỗi trong hệ
 
 - Vào **AWS Console**
 - Tìm kiếm **CloudWatch** và mở dịch vụ
+![Connect](/ws_FCJ_HoangNam/images/10.configureCloudWatch/B8.png)
 
 ---
 
 ## 2. Tạo Alarm cho Step Functions
 
 - Chọn **Alarms** → Nhấn **Create alarm**
+![Connect](/ws_FCJ_HoangNam/images/10.configureCloudWatch/B8_1.png)
+
 - **Select metric**:
   - Chọn `States` → `Execution Metrics` → `ExecutionsFailed`
-  - Chọn workflow: `DataProcessingWorkflow`
+  - Chọn workflow: `DataProcessingWorkflow ` → `select metric`
+  ![Connect](/ws_FCJ_HoangNam/images/10.configureCloudWatch/B8_1_4.png)
+
 - **Conditions**:
   - Threshold: `Greater than or equal to 1`
   - Period: `5 minutes`
+  ![Connect](/ws_FCJ_HoangNam/images/10.configureCloudWatch/B8_2.png)
+
 - **Actions**:
   - Chọn: `Send notification to SNS topic`
   - SNS Topic: `PipelineNotifications`

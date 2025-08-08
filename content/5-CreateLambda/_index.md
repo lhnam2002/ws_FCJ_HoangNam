@@ -16,6 +16,7 @@ Create 4 Lambda functions to handle each step of the serverless data processing 
 
 - Open AWS Console: [https://console.aws.amazon.com/lambda](https://console.aws.amazon.com/lambda)
 - Search for **Lambda**, go to **Functions**, and click **Create function**
+![Connect](/ws_FCJ_HoangNam/images/5.createLambda/B3.png)
 
 ---
 
@@ -24,8 +25,10 @@ Create 4 Lambda functions to handle each step of the serverless data processing 
 - **Function name**: `ValidateDataFunction`
 - **Runtime**: Python 3.9 (or newer)
 - **Architecture**: `x86_64`
+![Connect](/ws_FCJ_HoangNam/images/5.createLambda/B3_2.png)
 - **Permissions**: Choose **Use an existing role** → select `LambdaDataProcessingRole`
 - Click **Create function**
+![Connect](/ws_FCJ_HoangNam/images/5.createLambda/B3_2_1.png)
 
 ### ✅ Code (Tab: **Code > Code source**)
 
@@ -62,12 +65,14 @@ def lambda_handler(event, context):
         raise Exception(f"Validation failed: {str(e)}")
 ```
 - Click Deploy
+![Connect](/ws_FCJ_HoangNam/images/5.createLambda/B3_2_2.png)
 
 #### Configuration
 - Timeout: 30 seconds
 - Memory: 256 MB
 - Environment variable:
 - INPUT_BUCKET = data-processing-input-123456789012
+![Connect](/ws_FCJ_HoangNam/images/5.createLambda/B3_2_3.png)
 
 ## 3. Create `ProcessDataFunction`
 
@@ -182,7 +187,8 @@ def lambda_handler(event, context):
 - Click Test
 
 - Check logs in Monitor > Logs
-
+![Connect](/ws_FCJ_HoangNam/images/5.createLambda/B3_6.png)
+![Connect](/ws_FCJ_HoangNam/images/5.createLambda/B3_6_1.png)
 
 
 

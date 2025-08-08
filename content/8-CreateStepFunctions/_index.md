@@ -17,6 +17,8 @@ AWS Step Functions will orchestrate the entire serverless data processing pipeli
 - Open AWS Console
 - Search for **Step Functions**
 - Select **State machines** → click **Create state machine**
+![Connect](/ws_FCJ_HoangNam/images/8.createStepFunctions/B6.png)
+
 
 ---
 
@@ -170,12 +172,13 @@ AWS Step Functions will orchestrate the entire serverless data processing pipeli
 - **Permissions**:
   - Choose **Choose an existing role**
   - Select role: `StepFunctionsDataProcessingRole`
+  ![Connect](/ws_FCJ_HoangNam/images/8.createStepFunctions/B6_4.png)
+
 - **Logging**:
   - Enable `Log to CloudWatch Logs`
   - Set level: `ALL`
-
 - Click **Create state machine**
-
+![Connect](/ws_FCJ_HoangNam/images/8.createStepFunctions/B6_4_1.png)
 ---
 
 ## 5. Verify

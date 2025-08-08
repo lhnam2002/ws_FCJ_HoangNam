@@ -16,6 +16,7 @@ Tạo 4 hàm Lambda để xử lý các bước trong pipeline xử lý dữ li�
 
 - Vào AWS Console: [https://console.aws.amazon.com/lambda](https://console.aws.amazon.com/lambda)
 - Tìm **Lambda** → chọn **Functions** → nhấn **Create function**
+![Connect](/ws_FCJ_HoangNam/images/5.createLambda/B3.png)
 
 ---
 
@@ -24,8 +25,10 @@ Tạo 4 hàm Lambda để xử lý các bước trong pipeline xử lý dữ li�
 - **Function name**: `ValidateDataFunction`
 - **Runtime**: Python 3.9 (hoặc mới hơn)
 - **Architecture**: `x86_64`
+![Connect](/ws_FCJ_HoangNam/images/5.createLambda/B3_2.png)
 - **Permissions**: Chọn **Use an existing role** → chọn `LambdaDataProcessingRole`
 - Nhấn **Create function**
+![Connect](/ws_FCJ_HoangNam/images/5.createLambda/B3_2_1.png)
 
 ### ✅ Code (tab **Code > Code source**):
 
@@ -62,12 +65,14 @@ def lambda_handler(event, context):
         raise Exception(f"Validation failed: {str(e)}")
 ```
 - Nhấn Deploy
+![Connect](/ws_FCJ_HoangNam/images/5.createLambda/B3_2_2.png)
 
 #### Configuration:
 - Timeout: 30 giây
 - Memory: 256 MB
 - Environment variables:
 - INPUT_BUCKET = data-processing-input-123456789012
+![Connect](/ws_FCJ_HoangNam/images/5.createLambda/B3_2_3.png)
 
 ## 3.Tạo `ProcessDataFunction`
 
@@ -178,3 +183,6 @@ def lambda_handler(event, context):
 }
 ```
 - Nhấn Test, sau đó kiểm tra log ở tab Monitor > Logs
+![Connect](/ws_FCJ_HoangNam/images/5.createLambda/B3_6.png)
+![Connect](/ws_FCJ_HoangNam/images/5.createLambda/B3_6_1.png)
+
